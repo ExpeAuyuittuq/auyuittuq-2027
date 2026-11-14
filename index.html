@@ -11,6 +11,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://expe-auyuittuq.ca/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Expédition Auyuittuq 2027">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="og:image:alt" content="Une pulka rouge sur un lac gelé du col Akshayuk, entre des parois de granit, avec le mot Auyuittuq en syllabique inuktitut">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://expe-auyuittuq.ca/og-image.jpg">
 <meta name="theme-color" content="#4B3027">
@@ -18,8 +22,8 @@
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="favicon-180.png">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Expédition Auyuittuq</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<title>Expédition Auyuittuq 2027 · Le col Akshayuk à ski et pulka</title>
+<link rel="canonical" href="https://expe-auyuittuq.ca/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..112,400..900&family=Big+Shoulders+Display:wght@700;800;900&family=Sedgwick+Ave&family=Courier+Prime:wght@400;700&family=Noto+Sans+Canadian+Aboriginal:wght@600;800&display=swap">
@@ -49,7 +53,7 @@ h2{font-size:clamp(42px,4.8vw,64px);line-height:.9;letter-spacing:0;text-transfo
 h3{font-size:clamp(24px,2.1vw,30px);line-height:1;letter-spacing:.005em}
 p{margin:0;max-width:58ch}
 a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1.5px}
-:focus-visible{outline:2px solid var(--bark2);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:2px}
 canvas{display:block;width:100%;height:100%}
 .syl{font-family:var(--syl);font-weight:800}
 .dark{background:var(--bark2);color:var(--cream);position:relative;isolation:isolate}
@@ -223,10 +227,10 @@ body:not(.en) .pill.ok::after{content:none}
 .snowfield a,.snowfield button{pointer-events:auto}
 .snowfield a,.snowfield button{cursor:none}
 .chladni{position:absolute;inset:0;width:100%;height:100%;display:block}
-#origines{position:relative;overflow:hidden;cursor:none}
-#origines>.wrap{position:relative;z-index:1}
-#origines a,#origines button{cursor:none}
-@media (hover:none){#origines{cursor:auto}}
+#projet{position:relative;overflow:hidden;cursor:none}
+#projet>.wrap{position:relative;z-index:1}
+#projet a,#projet button{cursor:none}
+@media (hover:none){#projet{cursor:auto}}
 .shuffle{all:unset;margin-top:34px;display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border:1px solid rgba(242,235,216,.35);border-radius:999px;font:400 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--cream);background:rgba(53,26,17,.45);backdrop-filter:blur(3px)}
 .shuffle:hover{border-color:var(--mint);color:var(--mint)}
 .shuffle:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
@@ -252,7 +256,7 @@ body:not(.en) .pill.ok::after{content:none}
 .routeline{stroke:var(--cream);stroke-width:3;fill:none;stroke-dasharray:7 6;stroke-linecap:round}
 .legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:13px;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{display:inline-block;width:18px;height:0;border-top:3px solid;border-image:repeating-linear-gradient(90deg,var(--cream) 0 7px,transparent 7px 17px) 1}
+.legend i{display:inline-block;width:34px;height:0;border-top:3px solid;border-image:repeating-linear-gradient(90deg,var(--cream) 0 7px,transparent 7px 17px) 1}
 .legend i.c{width:10px;height:10px;border:2.5px solid var(--ink);border-radius:50%;background:var(--sand)}
 .legend i.t{width:18px;border-top:1.5px solid;border-image:repeating-linear-gradient(90deg,#A8957C 0 7px,transparent 7px 17px) 1}
 .legend i.w{width:14px;height:10px;border:0;background:rgba(127,163,107,.7)}
@@ -450,10 +454,10 @@ html.no-intro .curtain{display:none}
 /* ---------- scroll animations ---------- */
 .ticker{background:var(--mint);color:var(--bark2);overflow:hidden;padding-block:16px;border-block:1.5px solid;border-image:repeating-linear-gradient(90deg,var(--bark2) 0 7px,transparent 7px 17px) 1}
 .tk-track{display:flex;width:max-content;animation:tick 38s linear infinite}
-.tk-track span{font:900 clamp(26px,3vw,40px)/1 var(--display);text-transform:uppercase;white-space:nowrap;padding-inline:28px;display:inline-flex;align-items:center;gap:56px}
-.tk-track span::after{content:"";flex:none;width:36px;height:36px;background:var(--bark2);-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><filter id='r'><feTurbulence type='fractalNoise' baseFrequency='.09' numOctaves='2' seed='3'/><feDisplacementMap in='SourceGraphic' scale='.8'/></filter><path filter='url(%23r)' d='M20.6 35.2 L20.3 29.9 L19.9 25.0 L20.3 20.2 L20.0 14.7 L19.7 9.7 L19.4 4.8 M7.2 28.2 L11.3 25.8 L16.0 22.9 L20.2 19.8 L24.1 17.4 L28.7 14.8 L32.8 11.8 M7.3 11.7 L11.6 14.6 L15.8 17.0 L20.0 19.7 L24.5 23.0 L28.5 25.4 L32.7 28.3 M20.0 9.1 L18.5 7.9 L16.7 6.4 M20.0 9.1 L21.5 7.6 L22.9 6.2 M29.4 14.6 L30.2 12.5 L30.7 10.8 M29.4 14.6 L31.5 14.9 L33.7 15.3 M29.4 25.4 L31.6 24.8 L33.3 24.4 M29.4 25.4 L30.0 27.2 L30.5 29.1 M20.0 30.9 L21.5 32.5 L23.1 34.2 M20.0 30.9 L18.4 32.0 L17.2 33.3 M10.6 25.4 L10.0 27.5 L9.7 29.7 M10.6 25.4 L8.4 25.1 L6.5 24.6 M10.6 14.6 L8.4 15.5 L6.1 16.2 M10.6 14.6 L10.1 12.8 L9.2 10.9' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><filter id='r'><feTurbulence type='fractalNoise' baseFrequency='.09' numOctaves='2' seed='3'/><feDisplacementMap in='SourceGraphic' scale='.8'/></filter><path filter='url(%23r)' d='M20.6 35.2 L20.3 29.9 L19.9 25.0 L20.3 20.2 L20.0 14.7 L19.7 9.7 L19.4 4.8 M7.2 28.2 L11.3 25.8 L16.0 22.9 L20.2 19.8 L24.1 17.4 L28.7 14.8 L32.8 11.8 M7.3 11.7 L11.6 14.6 L15.8 17.0 L20.0 19.7 L24.5 23.0 L28.5 25.4 L32.7 28.3 M20.0 9.1 L18.5 7.9 L16.7 6.4 M20.0 9.1 L21.5 7.6 L22.9 6.2 M29.4 14.6 L30.2 12.5 L30.7 10.8 M29.4 14.6 L31.5 14.9 L33.7 15.3 M29.4 25.4 L31.6 24.8 L33.3 24.4 M29.4 25.4 L30.0 27.2 L30.5 29.1 M20.0 30.9 L21.5 32.5 L23.1 34.2 M20.0 30.9 L18.4 32.0 L17.2 33.3 M10.6 25.4 L10.0 27.5 L9.7 29.7 M10.6 25.4 L8.4 25.1 L6.5 24.6 M10.6 14.6 L8.4 15.5 L6.1 16.2 M10.6 14.6 L10.1 12.8 L9.2 10.9' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;margin-left:56px;animation:spinf 9s linear infinite}
+.tk-track>span{font:900 clamp(26px,3vw,40px)/1 var(--display);text-transform:uppercase;white-space:nowrap;padding-inline:28px;display:inline-flex;align-items:center;gap:56px}
+.tk-track>span::after{content:"";flex:none;width:36px;height:36px;background:var(--bark2);-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><filter id='r'><feTurbulence type='fractalNoise' baseFrequency='.09' numOctaves='2' seed='3'/><feDisplacementMap in='SourceGraphic' scale='.8'/></filter><path filter='url(%23r)' d='M20.6 35.2 L20.3 29.9 L19.9 25.0 L20.3 20.2 L20.0 14.7 L19.7 9.7 L19.4 4.8 M7.2 28.2 L11.3 25.8 L16.0 22.9 L20.2 19.8 L24.1 17.4 L28.7 14.8 L32.8 11.8 M7.3 11.7 L11.6 14.6 L15.8 17.0 L20.0 19.7 L24.5 23.0 L28.5 25.4 L32.7 28.3 M20.0 9.1 L18.5 7.9 L16.7 6.4 M20.0 9.1 L21.5 7.6 L22.9 6.2 M29.4 14.6 L30.2 12.5 L30.7 10.8 M29.4 14.6 L31.5 14.9 L33.7 15.3 M29.4 25.4 L31.6 24.8 L33.3 24.4 M29.4 25.4 L30.0 27.2 L30.5 29.1 M20.0 30.9 L21.5 32.5 L23.1 34.2 M20.0 30.9 L18.4 32.0 L17.2 33.3 M10.6 25.4 L10.0 27.5 L9.7 29.7 M10.6 25.4 L8.4 25.1 L6.5 24.6 M10.6 14.6 L8.4 15.5 L6.1 16.2 M10.6 14.6 L10.1 12.8 L9.2 10.9' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><filter id='r'><feTurbulence type='fractalNoise' baseFrequency='.09' numOctaves='2' seed='3'/><feDisplacementMap in='SourceGraphic' scale='.8'/></filter><path filter='url(%23r)' d='M20.6 35.2 L20.3 29.9 L19.9 25.0 L20.3 20.2 L20.0 14.7 L19.7 9.7 L19.4 4.8 M7.2 28.2 L11.3 25.8 L16.0 22.9 L20.2 19.8 L24.1 17.4 L28.7 14.8 L32.8 11.8 M7.3 11.7 L11.6 14.6 L15.8 17.0 L20.0 19.7 L24.5 23.0 L28.5 25.4 L32.7 28.3 M20.0 9.1 L18.5 7.9 L16.7 6.4 M20.0 9.1 L21.5 7.6 L22.9 6.2 M29.4 14.6 L30.2 12.5 L30.7 10.8 M29.4 14.6 L31.5 14.9 L33.7 15.3 M29.4 25.4 L31.6 24.8 L33.3 24.4 M29.4 25.4 L30.0 27.2 L30.5 29.1 M20.0 30.9 L21.5 32.5 L23.1 34.2 M20.0 30.9 L18.4 32.0 L17.2 33.3 M10.6 25.4 L10.0 27.5 L9.7 29.7 M10.6 25.4 L8.4 25.1 L6.5 24.6 M10.6 14.6 L8.4 15.5 L6.1 16.2 M10.6 14.6 L10.1 12.8 L9.2 10.9' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;margin-left:56px;animation:spinf 9s linear infinite}
 @keyframes spinf{to{transform:rotate(360deg)}}
-.tk-track span:nth-child(5n+1){font-family:var(--syl);font-weight:800;text-transform:none}
+.tk-track>span:nth-child(5n+1){font-family:var(--syl);font-weight:800;text-transform:none}
 @keyframes tick{to{transform:translateX(-50%)}}
 .rmask{stroke-dasharray:1 1;stroke-dashoffset:0;transition:stroke-dashoffset 2.4s .35s cubic-bezier(.65,0,.35,1)}
 .mapbox.rv .rmask{stroke-dashoffset:-1}
@@ -477,6 +481,36 @@ html.no-intro .curtain{display:none}
 }
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.rmask{transition:none}}
 
+/* ---------- additions ---------- */
+.ask :focus-visible,.ticker :focus-visible{outline-color:var(--bark2)}
+th{white-space:nowrap}
+.ig{max-width:100%;overflow-wrap:anywhere}
+a.mailbox{text-decoration:none;transition:border-color .2s,color .2s}
+a.mailbox:hover{border-color:var(--mint);color:var(--mint)}
+/* sketchbook: the whole spread fits in the window; no page controls when there is a single spread */
+@media (min-width:641px){.book{max-width:clamp(520px,calc((100vh - 170px)*1.39),1000px)}}
+.book.solo{cursor:default}
+.book-nav.solo .bk-btn,.book-nav.solo .bk-count,.book-nav.solo .bk-sep{display:none}
+/* route: the map follows the day-by-day list */
+@media (min-width:861px) and (min-height:700px){.route-grid>div:first-child{position:sticky;top:88px}}
+/* gear list on phones: one block per item, status always visible (no sideways scroll) */
+@media (max-width:720px){
+  .tablebox{overflow:visible}
+  table{display:block;min-width:0}
+  thead{display:none}
+  tbody{display:block}
+  tbody tr{display:grid;grid-template-columns:48px minmax(0,1fr) auto;column-gap:12px;row-gap:4px;align-items:start;padding-block:16px;border-bottom:1px solid;border-image:repeating-linear-gradient(90deg,var(--line) 0 7px,transparent 7px 17px) 1}
+  tbody td{display:block;padding:0;border:0}
+  td.ill{grid-column:1;grid-row:1/span 3;width:auto;padding:0}
+  td.ill .gi{width:44px;height:44px}
+  tbody td:nth-child(2){grid-column:2;grid-row:1}
+  tbody td:nth-child(5){grid-column:3;grid-row:1}
+  td.q{grid-column:2/-1;grid-row:2;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+  tbody td:nth-child(4){grid-column:2/-1;grid-row:3;font-size:14px;color:var(--muted)}
+  .progress{flex-direction:column;align-items:stretch;gap:10px}
+  .track{flex:none;width:100%;max-width:none}
+}
+
 </style>
 
 </head>
@@ -489,10 +523,14 @@ html.no-intro .curtain{display:none}
   </div>
 </div>
 <script>try{if(location.hash!=='#intro'&&sessionStorage.getItem('intro'))document.documentElement.classList.add('no-intro');sessionStorage.setItem('intro','1')}catch(e){}</script>
+<script>/* language: ?lang=en|fr in the link, then the visitor's last choice, then the browser language */
+(function(){var l=null,m=/[?&]lang=(fr|en)\b/.exec(location.search);try{if(m){l=m[1];localStorage.setItem('lang',l)}else{l=localStorage.getItem('lang')}}catch(e){if(m)l=m[1]}
+if(l!=='fr'&&l!=='en'){var ls=(navigator.languages&&navigator.languages.length)?[].slice.call(navigator.languages):[navigator.language||'fr'],hasFr=ls.some(function(x){return /^fr/i.test(x)});l=(!hasFr&&/^en/i.test(ls[0]))?'en':'fr'}
+window.__lang=l;if(l==='en'){document.body.classList.add('en');document.documentElement.lang='en'}})();</script>
 <header class="bar dark">
   <div class="wrap">
     <nav aria-label="Sections">
-      <a href="#origines"><span class="fr">Les origines</span><span class="en">Origins</span></a>
+      <a href="#projet"><span class="fr">Le projet</span><span class="en">The project</span></a>
       <a href="#trace"><span class="fr">La trace</span><span class="en">The route</span></a>
       <a href="#equipe"><span class="fr">L'équipe</span><span class="en">Team</span></a>
       <a href="#materiel"><span class="fr">Matériel</span><span class="en">Gear</span></a>
@@ -507,60 +545,60 @@ html.no-intro .curtain{display:none}
 
 <main id="top">
 <section class="hero">
-  <div class="bg"><div class="par"><img src="header-pulka.jpg" alt="Une pulka chargée, seule sur un lac gelé entre deux parois de granit" fetchpriority="high"></div></div>
+  <div class="bg"><div class="par"><img src="header-pulka.jpg" alt="Une pulka chargée, seule sur un lac gelé entre deux parois de granit" data-en="A loaded pulk, alone on a frozen lake between two granite walls" fetchpriority="high"></div></div>
   <div class="wrap inner">
     <h1>
       <span class="l1"><span class="fr">L'expédition</span><span class="en">The expedition</span>
         <svg class="loop" viewBox="0 0 640 40" preserveAspectRatio="none" aria-hidden="true"><path class="p1" pathLength="1" d="M0 14.3 L35 14.7 L75 12.9 L113 14.7 L144 14.4 L173 13.1 L212 14.9 L248 14.1 L279 12.8 L309 13.8 L338 15.0 L374 13.2 L400 13.1 L438 13.1 L462 15.1 L486 13.3 L516 15.1 L545 14.9 L578 13.6 L608 14.1 L638 13.2 L640 15.1"/><path class="p1 b" pathLength="1" d="M0 28.9 L33 26.9 L70 27.2 L98 27.4 L132 27.5 L156 28.2 L190 27.0 L225 28.8 L264 28.5 L293 28.0 L322 26.9 L346 29.1 L381 28.8 L405 28.1 L442 27.7 L466 27.9 L495 28.3 L525 27.1 L556 29.0 L594 27.6 L629 28.9 L640 28.7"/></svg><svg class="sled" viewBox="0 0 60 30" aria-hidden="true"><path pathLength="1" d="M3 20 Q4 27 12 27 L52 27 Q57 27 57 22 M8 20 Q9 9 20 9 L46 9 Q55 9 55 20 Z M18 9 L22 4 M40 9 L37 4 M3 20 L-14 18"/></svg>
       </span>
-      <span class="l2"><span class="syl" lang="iu">ᐊᐅᔪᐃᑦᑐᖅ</span><small><span class="fr">Auyuittuq, « la terre qui ne fond jamais »</span><span class="en">Auyuittuq, "the land that never melts"</span></small></span>
+      <span class="l2"><span class="syl" lang="iu">ᐊᐅᔪᐃᑦᑐᖅ</span><small><span class="fr">Auyuittuq, «&nbsp;la terre qui ne fond jamais&nbsp;»</span><span class="en">Auyuittuq, "the land that never melts"</span></small></span>
     </h1>
-    <p class="intro"><span class="fr">Derrière l'expédition, sept amis : quatre de Montréal, trois du Nunavut. En avril 2027, on traverse le col Akshayuk à ski, 100 km du nord au sud, chacun tirant sa pulka, en autonomie complète, entre −30 et −40 °C. On cherche des partenaires pour s'équiper.</span><span class="en">Behind the expedition are seven friends: four from Montréal, three from Nunavut. In April 2027 we ski Akshayuk Pass, 100 km north to south, each hauling a pulk, fully self-supported, in −30 to −40 °C. We're looking for partners to gear up.</span></p>
+    <p class="intro"><span class="fr">On est sept amis&nbsp;: quatre de Montréal, trois du Nunavut. En avril 2027, on traverse le col Akshayuk à ski, 100&nbsp;km du nord au sud, chacun avec sa pulka, en autonomie complète, entre −30 et −40&nbsp;°C. On cherche des partenaires pour s'équiper.</span><span class="en">We're seven friends: four from Montréal, three from Nunavut. In April 2027 we're skiing Akshayuk Pass, 100&nbsp;km north to south, each hauling our own pulk, fully self-supported, at −30 to −40&nbsp;°C. We're looking for partners to help us gear up.</span></p>
     <div class="cta">
       <a class="btn mint" href="#materiel"><span class="fr">Voir nos besoins</span><span class="en">See what we need</span></a>
       <a class="btn ghost" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a>
     </div>
   </div>
-  <div class="collage" aria-hidden="false">
+  <div class="collage">
     <div class="wrap">
-      <figure class="c1"><img src="camp-film.jpg" alt="Tente au pied d'une grande montagne rocheuse, sur pellicule"></figure>
-      <figure class="c2"><img src="tentdoor.jpg" alt="Paroi de granit vue depuis l'ouverture d'une tente"></figure>
-      <figure class="c3"><img src="stove.jpg" alt="Réchaud, casserole et chaussons en duvet sur la neige"></figure>
+      <figure class="c1"><img src="camp-film.jpg" alt="Tente au pied d'une grande montagne rocheuse, sur pellicule" data-en="A tent below a big rocky mountain, shot on film" decoding="async"></figure>
+      <figure class="c2"><img src="tentdoor.jpg" alt="Paroi de granit vue depuis l'ouverture d'une tente" data-en="A granite wall seen through a tent door" decoding="async"></figure>
+      <figure class="c3"><img src="stove.jpg" alt="Réchaud, casserole et chaussons en duvet sur la neige" data-en="A stove, a pot and down booties on the snow" decoding="async"></figure>
     </div>
   </div>
 </section>
 
-<section id="origines" data-snow class="after-collage">
+<section id="projet" data-snow class="after-collage">
   <canvas class="chladni" id="chladni2" aria-hidden="true"></canvas>
   <div class="wrap split">
-    <h2 class="big"><span class="fr">Les origines de <span class="accent">la trace</span></span><span class="en">The origins of <span class="accent">the trail</span></span></h2>
+    <h2 class="big"><span class="fr">Traverser <span class="accent">le col Akshayuk</span></span><span class="en">Crossing <span class="accent">Akshayuk Pass</span></span></h2>
     <div class="copy">
-      <p class="lede"><span class="fr">Sept amis, de Montréal au Nunavut, toujours dehors : ultra-trail, ski, gravel, escalade. En avril 2027, on traverse ensemble le parc national Auyuittuq, du nord au sud, en passant le cercle arctique.</span><span class="en">Seven friends, from Montréal to Nunavut, always outdoors: ultra-trail, skiing, gravel, climbing. In April 2027 we cross Auyuittuq National Park together, north to south, over the Arctic Circle.</span></p>
-      <p><span class="fr">Une pulka, c'est un traîneau qu'on tire à la taille, en ski. Tente, nourriture, combustible, sacs de couchage : tout est dedans. Pendant huit jours, on est notre propre camp de base.</span><span class="en">A pulk is a sled you haul from a waist harness while skiing. Tent, food, fuel, sleeping bags: it's all in there. For eight days we are our own base camp.</span></p>
-      <p class="spec"><span><span class="fr"><span class="hw" role="img" aria-label="7 skieurs" style="--src:url(skieurs.png);aspect-ratio:488/120"></span></span><span class="en"><b>7</b> skiers</span></span><span><span class="fr"><span class="hw" role="img" aria-label="100 km à ski" style="--src:url(km.png);aspect-ratio:594/120"></span></span><span class="en"><b>100 km</b> on skis</span></span><span><span class="fr"><span class="hw" role="img" aria-label="8 jours" style="--src:url(jours.png);aspect-ratio:276/120"></span></span><span class="en"><b>8</b> days</span></span><span><span class="fr"><span class="hw" role="img" aria-label="−30 à −40 °C" style="--src:url(temp.png);aspect-ratio:502/120"></span></span><span class="en"><b>−30 to −40 °C</b> at night</span></span><span><span class="fr"><span class="hw" role="img" aria-label="40 kg par pulka" style="--src:url(kg.png);aspect-ratio:597/120"></span></span><span class="en"><b>40 kg</b> per pulk</span></span><span><span class="fr"><span class="hw" role="img" aria-label="Cercle arctique" style="--src:url(cercle.png);aspect-ratio:452/120"></span></span><span class="en">Arctic Circle</span></span></p>
+      <p class="lede"><span class="fr">On passe notre temps dehors&nbsp;: ultra-trail, ski, gravel, escalade. Cette fois, on part plus loin&nbsp;: le parc national Auyuittuq, sur l'île de Baffin, qu'on traverse du nord au sud en passant le cercle arctique.</span><span class="en">We spend our time outdoors: ultra-trail running, skiing, gravel riding, climbing. This time we're going further: Auyuittuq National Park, on Baffin Island, which we'll cross north to south, over the Arctic Circle.</span></p>
+      <p><span class="fr">Une pulka, c'est un traîneau qu'on tire à ski, attaché à la taille. Tente, nourriture, combustible, sacs de couchage&nbsp;: tout est dedans. Pendant huit jours, on est notre propre camp de base.</span><span class="en">A pulk is a sled you haul behind you on skis, clipped to a waist harness. Tent, food, fuel, sleeping bags: it's all in there. For eight days, we are our own base camp.</span></p>
+      <p class="spec"><span><span class="fr"><span class="hw" role="img" aria-label="7 skieurs" style="--src:url(skieurs.png);aspect-ratio:488/120"></span></span><span class="en"><b>7</b> skiers</span></span><span><span class="fr"><span class="hw" role="img" aria-label="100&nbsp;km à ski" style="--src:url(km.png);aspect-ratio:594/120"></span></span><span class="en"><b>100&nbsp;km</b> on skis</span></span><span><span class="fr"><span class="hw" role="img" aria-label="8 jours" style="--src:url(jours.png);aspect-ratio:276/120"></span></span><span class="en"><b>8</b> days</span></span><span><span class="fr"><span class="hw" role="img" aria-label="−30 à −40&nbsp;°C" style="--src:url(temp.png);aspect-ratio:502/120"></span></span><span class="en"><b>−30 to −40&nbsp;°C</b></span></span><span><span class="fr"><span class="hw" role="img" aria-label="40&nbsp;kg par pulka" style="--src:url(kg.png);aspect-ratio:597/120"></span></span><span class="en"><b>40&nbsp;kg</b> per pulk</span></span><span><span class="fr"><span class="hw" role="img" aria-label="Cercle arctique" style="--src:url(cercle.png);aspect-ratio:452/120"></span></span><span class="en">Arctic Circle</span></span></p>
     </div>
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div class="tk-track"><span>ᐊᐅᔪᐃᑦᑐᖅ</span><span>Qikiqtarjuaq → Pangnirtung</span><span>Avril 2027</span><span>7 skieurs · 7 pulkas</span><span>Montréal · Nunavut</span><span>ᐊᐅᔪᐃᑦᑐᖅ</span><span>Qikiqtarjuaq → Pangnirtung</span><span>Avril 2027</span><span>7 skieurs · 7 pulkas</span><span>Montréal · Nunavut</span></div></div>
+<div class="ticker" aria-hidden="true"><div class="tk-track"><span>ᐊᐅᔪᐃᑦᑐᖅ</span><span>Qikiqtarjuaq → Pangnirtung</span><span><span class="fr">Avril 2027</span><span class="en">April 2027</span></span><span><span class="fr">7 skieurs · 7 pulkas</span><span class="en">7 skiers · 7 pulks</span></span><span>Montréal · Nunavut</span><span>ᐊᐅᔪᐃᑦᑐᖅ</span><span>Qikiqtarjuaq → Pangnirtung</span><span><span class="fr">Avril 2027</span><span class="en">April 2027</span></span><span><span class="fr">7 skieurs · 7 pulkas</span><span class="en">7 skiers · 7 pulks</span></span><span>Montréal · Nunavut</span></div></div>
 
 <section class="mission">
-  <img src="aurora.jpg" alt="Aurore boréale verte au-dessus des sommets du col Akshayuk">
+  <img src="aurora.jpg" alt="Aurore boréale verte au-dessus des sommets du col Akshayuk" data-en="Green northern lights above the peaks of Akshayuk Pass" loading="lazy" decoding="async">
   <div class="wrap">
     <span class="dot"><span class="fr">Notre mission</span><span class="en">Our mission</span></span>
-    <p class="say" data-words><span class="fr">Traverser ensemble un territoire inuit exceptionnel, et partager cette histoire à Montréal comme à Iqaluit.</span><span class="en">Cross an extraordinary Inuit land together, and share the story in Montréal and Iqaluit alike.</span></p>
-    <span class="credit">Photo : Antho</span>
+    <p class="say" data-words><span class="fr">Traverser ensemble ce territoire inuit, et partager cette histoire à Montréal comme à Iqaluit.</span><span class="en">Cross this Inuit land together, and share the story in Montréal and Iqaluit alike.</span></p>
+    <span class="credit"><span class="fr">Photo&nbsp;: Antho</span><span class="en">Photo: Antho</span></span>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2><span class="fr">Notre façon d'avancer</span><span class="en">How we move forward</span></h2>
+    <h2><span class="fr">Notre façon d'avancer</span><span class="en">How we travel</span></h2>
     <div class="values">
-      <div class="value"><div class="tile" style="background:var(--paper2)"><img src="illus-02.svg" alt="" loading="eager"></div><h3><span class="fr">Respecter la terre inuit</span><span class="en">Respect Inuit land</span></h3><p><span class="fr">Auyuittuq est sur les terres des Inuit. On y voyage avec respect, sans laisser de trace, en suivant les règles du parc et les conseils des gens de la région.</span><span class="en">Auyuittuq is on Inuit land. We travel there with respect, leave no trace, and follow the park's rules and the advice of people from the region.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-05.svg" alt="" loading="eager"></div><h3><span class="fr">Apprendre les uns des autres</span><span class="en">Learn from each other</span></h3><p><span class="fr">Sept parcours, sept façons de voir le froid, la neige et la route. Chacun apporte ce qu'il sait, et tout le monde repart avec plus.</span><span class="en">Seven backgrounds, seven ways of seeing cold, snow and the route. Everyone brings what they know, and everyone leaves with more.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--mint)"><img src="illus-01.svg" alt="" loading="eager"></div><h3><span class="fr">Tout dans la pulka</span><span class="en">All in the pulk</span></h3><p><span class="fr">Aucun ravitaillement. Ce qu'on tire, c'est ce qu'on a. Chaque gramme est pensé.</span><span class="en">No resupply. What we haul is what we have. Every gram is planned.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-04.svg" alt="" loading="eager"></div><h3><span class="fr">Partir à l'aventure</span><span class="en">Go for it</span></h3><p><span class="fr">Oser partir loin, en sécurité : premiers soins, suivi satellite, plan d'évacuation. Et toujours avoir du fun.</span><span class="en">Dare to go far, safely: first aid, satellite tracking, evacuation plan. And always have fun.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--paper2)"><img src="illus-02.svg" alt="" loading="eager"></div><h3><span class="fr">Respecter la terre inuit</span><span class="en">Respect Inuit land</span></h3><p><span class="fr">Auyuittuq est en terre inuit. On y passe sans laisser de trace, en suivant les règles du parc et les conseils des gens de la région.</span><span class="en">Auyuittuq is Inuit land. We pass through without leaving a trace, following the park's rules and the advice of the people who live there.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-05.svg" alt="" loading="eager"></div><h3><span class="fr">Apprendre les uns des autres</span><span class="en">Learn from each other</span></h3><p><span class="fr">Un chasseur du Nunavut, un pharmacien, un moniteur de ski, des coureurs d'ultra. Chacun apporte ce qu'il sait faire, et là-bas, tout va servir.</span><span class="en">A hunter from Nunavut, a pharmacist, a ski instructor, ultrarunners. Everyone brings what they know, and out there all of it will be needed.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--mint)"><img src="illus-01.svg" alt="" loading="eager"></div><h3><span class="fr">Tout dans la pulka</span><span class="en">All in the pulk</span></h3><p><span class="fr">Aucun ravitaillement en route. Ce qu'on tire, c'est tout ce qu'on a&nbsp;: environ 40&nbsp;kg chacun.</span><span class="en">No resupply along the way. What we haul is all we have: about 40&nbsp;kg each.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-04.svg" alt="" loading="eager"></div><h3><span class="fr">Partir préparés</span><span class="en">Go prepared</span></h3><p><span class="fr">Premiers soins, suivi satellite, plan d'évacuation&nbsp;: la sécurité passe en premier. Le fun arrive juste après.</span><span class="en">First aid, satellite tracking, an evacuation plan: safety comes first. Fun is a close second.</span></p></div>
     </div>
   </div>
 </section>
@@ -570,14 +608,14 @@ html.no-intro .curtain{display:none}
     <div class="split">
       <h2><span class="fr">Antho a déjà fait une partie de la trace</span><span class="en">Antho has already done part of the route</span></h2>
       <div class="copy">
-        <p class="lede"><span class="fr">Seul avec sa pulka, il a parcouru une partie de l'itinéraire. Il revient avec des repères, des leçons sur le matériel et ces images. On y retourne, à sept cette fois.</span><span class="en">Alone with his pulk, he covered part of the route. He came back with landmarks, gear lessons and these images. We're going back, seven of us this time.</span></p>
-        <p><a class="btn mint" href="https://routesaemporter.com/AUYUITTUQ" target="_blank" rel="noopener"><span class="fr">Lire le récit d'Antho</span><span class="en">Read Antho's story</span> →</a></p>
+        <p class="lede"><span class="fr">Cinq jours seul avec sa pulka, de Pangnirtung à Summit Lake et retour. Il en a rapporté des repères, des leçons sur le matériel et ces images. On y retourne, à sept cette fois.</span><span class="en">Five days alone with his pulk, from Pangnirtung up to Summit Lake and back. He came home knowing the terrain, with lessons about gear and these photos. We're going back, seven of us this time.</span></p>
+        <p><a class="btn mint" href="https://routesaemporter.com/AUYUITTUQ" target="_blank" rel="noopener"><span class="fr">Lire le récit d'Antho</span><span class="en">Read Antho's story (in French)</span> →</a></p>
         
       </div>
     </div>
     <div class="antho-grid">
-      <figure class="a1"><img src="arctic-circle.jpg" alt="Antho à côté du panneau Cercle arctique, 66°33′N, devant les montagnes"><figcaption>Photo : Antho</figcaption></figure>
-      <figure class="a2"><img src="pulka.jpg" alt="Antho tire sa pulka sur un lac gelé" style="object-position:50% 40%"><figcaption>Photo : Antho</figcaption></figure>
+      <figure class="a1"><img src="arctic-circle.jpg" alt="Antho à côté du panneau Cercle arctique, 66°33′N, devant les montagnes" data-en="Antho next to the Arctic Circle sign, 66°33′N, with mountains behind him" loading="lazy" decoding="async"><figcaption><span class="fr">Photo&nbsp;: Antho</span><span class="en">Photo: Antho</span></figcaption></figure>
+      <figure class="a2"><img src="pulka.jpg" alt="Antho tire sa pulka sur un lac gelé" data-en="Antho hauling his pulk across a frozen lake" style="object-position:50% 40%" loading="lazy" decoding="async"><figcaption><span class="fr">Photo&nbsp;: Antho</span><span class="en">Photo: Antho</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -587,28 +625,25 @@ html.no-intro .curtain{display:none}
     <div class="split">
       <h2><span class="fr">Le carnet d'Antho</span><span class="en">Antho's sketchbook</span></h2>
       <div class="copy">
-        <p class="lede"><span class="fr">Pendant son expédition, Antho dessinait ce qu'il voyait depuis le camp. De Pangnirtung au pic Overlord, une page par étape. Touchez le carnet pour tourner les pages.</span><span class="en">During his trip, Antho sketched what he saw from camp. From Pangnirtung to Overlord Peak, one page per stage. Tap the sketchbook to turn the pages.</span></p>
+        <p class="lede"><span class="fr">Pendant ces cinq jours, Antho a dessiné ce qu'il voyait depuis le camp. Ici, le mont Thor le premier soir, puis Summit Lake le lendemain.<span class="turn-hint"> Touchez le carnet pour tourner la page.</span></span><span class="en">Over those five days, Antho sketched what he saw from camp. Here, Mount Thor on the first evening, then Summit Lake the next day.<span class="turn-hint"> Tap the sketchbook to turn the page.</span></span></p>
       </div>
     </div>
-    <div class="book" id="book" tabindex="0" role="group" aria-roledescription="carnet" aria-label="Carnet d'Antho : touchez une page pour la tourner">
+    <div class="book" id="book" tabindex="0" role="group" aria-roledescription="carnet" aria-label="Carnet de croquis d'Antho" data-en="Antho's sketchbook">
       <figure class="page l"></figure>
       <figure class="page r"></figure>
       <div class="sketch-src" hidden>
-        <canvas data-sketch="carnet-pang.png" width="795" height="1120" role="img" aria-label="Croquis d'Antho : le fjord de Pangnirtung et ses montagnes, 1er avril"></canvas>
-        <canvas data-sketch="carnet-thor.png" width="795" height="1120" role="img" aria-label="Croquis d'Antho : le mont Thor et une tente au premier plan, nuit 1"></canvas>
-        <canvas data-sketch="carnet-summit.png" width="820" height="1140" role="img" aria-label="Croquis d'Antho : Summit Lake et ses sommets, jour 2"></canvas>
-        <canvas data-sketch="carnet-windy.png" width="795" height="1120" role="img" aria-label="Croquis d'Antho : les refuges de Windy Lake, jour 3"></canvas>
-        <canvas data-sketch="carnet-overlord.png" width="795" height="1120" role="img" aria-label="Croquis d'Antho : le pic Overlord, dernière nuit"></canvas>
+        <canvas data-sketch="carnet-thor.png" width="795" height="1120" role="img" aria-label="Croquis d'Antho&nbsp;: le mont Thor et une tente au premier plan, nuit 1" data-en="Sketch by Antho: Mount Thor with a tent in the foreground, night 1"></canvas>
+        <canvas data-sketch="carnet-summit.png" width="820" height="1140" role="img" aria-label="Croquis d'Antho&nbsp;: Summit Lake et ses sommets, jour 2" data-en="Sketch by Antho: Summit Lake and its peaks, day 2"></canvas>
       </div>
     </div>
     <div class="book-nav">
-      <button type="button" class="bk-btn" id="bkPrev" aria-label="Page précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <span class="bk-count" id="bkCount" aria-live="polite">1 / 3</span>
-      <button type="button" class="bk-btn" id="bkNext" aria-label="Page suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button type="button" class="bk-btn" id="bkPrev" aria-label="Page précédente" data-en="Previous page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <span class="bk-count" id="bkCount" aria-live="polite">1 / 1</span>
+      <button type="button" class="bk-btn" id="bkNext" aria-label="Page suivante" data-en="Next page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
       <span class="bk-sep" aria-hidden="true"></span>
       <button type="button" class="bk-redraw" id="redraw"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M14 7l3 3"/></svg><span class="fr">Redessiner</span><span class="en">Draw again</span></button>
     </div>
-    <p class="carnet-cap"><span class="fr">Dessins : Antho, col Akshayuk</span><span class="en">Drawings: Antho, Akshayuk Pass</span></p>
+    <p class="carnet-cap"><span class="fr">Dessins&nbsp;: Antho, col Akshayuk</span><span class="en">Drawings: Antho, Akshayuk Pass</span></p>
   </div>
 </section>
 
@@ -617,37 +652,37 @@ html.no-intro .curtain{display:none}
     <div class="split">
       <h2><span class="fr">On s'entraîne déjà sur la neige</span><span class="en">Already training on snow</span></h2>
       <div class="copy">
-        <p class="lede"><span class="fr">Avant le Nunavut, on se prépare sur les lacs gelés du Québec. Ici, une expédition en ski et pulka au réservoir du Poisson Blanc : camp sur la glace, nuits froides, et du matériel testé pour de vrai.</span><span class="en">Before Nunavut, we train on Québec's frozen lakes. Here, a ski and pulk trip on the Poisson Blanc reservoir: camp on the ice, cold nights, and gear tested for real.</span></p>
+        <p class="lede"><span class="fr">Avant le Nunavut, on se prépare sur les lacs gelés du Québec. Ici, une sortie à ski et pulka au réservoir du Poisson Blanc&nbsp;: camp sur la glace, nuits froides, et du matériel testé pour de vrai.</span><span class="en">Before Nunavut, we train on Québec's frozen lakes. Here, a ski-and-pulk trip on the Poisson Blanc reservoir: camping on the ice, cold nights, and gear tested for real.</span></p>
         <p><span class="fr">Photos de Doriane, au Poisson Blanc.</span><span class="en">Photos by Doriane, at Poisson Blanc.</span></p>
       </div>
     </div>
     <div class="pgrid">
-      <figure class="pg1"><img src="poisson-tent.jpg" alt="Au camp sur le lac gelé, un équipier monte sa tente au milieu des skis et des pulkas" style="object-position:50% 72%"></figure>
-      <figure class="pg2"><img src="poisson-pov.jpg" alt="Vue depuis la pulka : la trace file sur le lac gelé vers les autres skieurs" style="object-position:50% 60%"></figure>
-      <figure class="pg3"><img src="poisson-camp.jpg" alt="Deux tentes sur un lac enneigé au lever du jour" style="object-position:50% 80%"></figure>
-      <figure class="pg4"><img src="poisson-trail.jpg" alt="Une skieuse tire sa pulka dans la brume du matin"></figure>
+      <figure class="pg1"><img src="poisson-tent.jpg" alt="Au camp sur le lac gelé, un équipier monte sa tente au milieu des skis et des pulkas" data-en="At camp on the frozen lake, a teammate pitches a tent among the skis and pulks" style="object-position:50% 72%" loading="lazy" decoding="async"></figure>
+      <figure class="pg2"><img src="poisson-pov.jpg" alt="Vue depuis la pulka&nbsp;: la trace file sur le lac gelé vers les autres skieurs" data-en="View from the pulk: the track runs across the frozen lake towards the other skiers" style="object-position:50% 60%" loading="lazy" decoding="async"></figure>
+      <figure class="pg3"><img src="poisson-camp.jpg" alt="Deux tentes sur un lac enneigé au lever du jour" data-en="Two tents on a snow-covered lake at daybreak" style="object-position:50% 80%" loading="lazy" decoding="async"></figure>
+      <figure class="pg4"><img src="poisson-trail.jpg" alt="Une skieuse tire sa pulka dans la brume du matin" data-en="A skier hauls her pulk through the morning mist" loading="lazy" decoding="async"></figure>
     </div>
   </div>
 </section>
 
 <section class="timeline dark">
   <div class="wrap">
-    <div class="tabs" role="tablist" aria-label="Étapes">
+    <div class="tabs" role="tablist" aria-label="Étapes" data-en="Timeline">
       <button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="fr">Automne 2026</span><span class="en">Fall 2026</span></button>
       <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="fr">Hiver 2027</span><span class="en">Winter 2027</span></button>
       <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="fr">Avril 2027</span><span class="en">April 2027</span></button>
       <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="fr">Mai 2027</span><span class="en">May 2027</span></button>
     </div>
     <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-      <div class="txt"><span class="dot now"><span class="fr">En ce moment</span><span class="en">Right now</span></span><h2><span class="fr">On s'équipe et on cherche nos partenaires.</span><span class="en">Gearing up and finding our partners.</span></h2><p><span class="fr">Planification à sept, entre Montréal et Iqaluit : itinéraire, liste de matériel, dossier de commandite. C'est maintenant que votre aide compte.</span><span class="en">Planning as a team of seven, between Montréal and Iqaluit: route, gear list, sponsorship package. This is when your help counts.</span></p></div>
+      <div class="txt"><span class="dot now"><span class="fr">En ce moment</span><span class="en">Right now</span></span><h2><span class="fr">On s'équipe et on cherche nos partenaires.</span><span class="en">Gearing up and finding our partners.</span></h2><p><span class="fr">Planification à sept, entre Montréal et Iqaluit&nbsp;: itinéraire, liste de matériel, dossier de commandite. C'est maintenant que votre aide compte.</span><span class="en">Planning as a team of seven, between Montréal and Iqaluit: route, gear list, sponsorship package. Now is when your help matters most.</span></p></div>
       <div class="tile" style="background:var(--mint)"><canvas data-art="flatlay" data-ink="#351A11" data-seed="23" aria-hidden="true"></canvas></div>
     </div>
     <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-      <div class="txt"><h2><span class="fr">Entraînement à Montréal et à Iqaluit.</span><span class="en">Training in Montréal and Iqaluit.</span></h2><p><span class="fr">Sorties pulka par grand froid, test de chaque pièce de matériel avant le départ.</span><span class="en">Pulk outings in deep cold, testing every piece of gear before we go.</span></p></div>
+      <div class="txt"><h2><span class="fr">Entraînement à Montréal et à Iqaluit.</span><span class="en">Training in Montréal and Iqaluit.</span></h2><p><span class="fr">Sorties en pulka par grand froid, et chaque pièce de matériel testée avant le départ.</span><span class="en">Pulk outings in deep cold, and every piece of gear tested before we leave.</span></p></div>
       <div class="tile" style="background:var(--bark2)"><canvas data-art="tent" data-ink="#C9F2AE" data-seed="17" aria-hidden="true"></canvas></div>
     </div>
     <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <div class="txt"><h2><span class="fr">La traversée.</span><span class="en">The crossing.</span></h2><p><span class="fr">8 jours, dont 5 à ski sur 100 km, de Qikiqtarjuaq à Pangnirtung par le col Akshayuk, avec suivi GPS en direct sur ce site.</span><span class="en">8 days, 5 of them skiing 100 km, from Qikiqtarjuaq to Pangnirtung through Akshayuk Pass, with live GPS tracking on this site.</span></p></div>
+      <div class="txt"><h2><span class="fr">La traversée.</span><span class="en">The crossing.</span></h2><p><span class="fr">Huit jours, dont cinq à ski&nbsp;: 100&nbsp;km de Qikiqtarjuaq à Pangnirtung par le col Akshayuk, avec suivi GPS en direct sur ce site.</span><span class="en">Eight days, five of them on skis: 100&nbsp;km from Qikiqtarjuaq to Pangnirtung through Akshayuk Pass, with live GPS tracking on this site.</span></p></div>
       <div class="tile" style="background:var(--paper)"><canvas data-art="tracks" data-ink="#4B3027" data-seed="41" aria-hidden="true"></canvas></div>
     </div>
     <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
@@ -661,18 +696,18 @@ html.no-intro .curtain{display:none}
   <div class="wrap">
     <div class="split">
       <h2>Qikiqtarjuaq → Pangnirtung</h2>
-      <p class="lede"><span class="fr">Du nord au sud par le col Akshayuk, dans le parc national Auyuittuq. Une motoneige nous dépose à l'entrée du parc, puis 100 km à ski en tirant les pulkas, jusqu'à Overlord. Une autre motoneige nous ramène à Pangnirtung.</span><span class="en">North to south through Akshayuk Pass in Auyuittuq National Park. A snowmobile drops us at the park entrance, then 100 km on skis hauling pulks to Overlord. Another snowmobile takes us to Pangnirtung.</span></p>
+      <p class="lede"><span class="fr">Du nord au sud par le col Akshayuk, dans le parc national Auyuittuq. Une motoneige nous dépose à l'entrée du parc, puis 100&nbsp;km à ski en tirant les pulkas, jusqu'à Overlord. Une autre motoneige nous ramène à Pangnirtung.</span><span class="en">North to south through Akshayuk Pass, in Auyuittuq National Park. A snowmobile drops us at the park entrance, then it's 100&nbsp;km on skis, hauling the pulks, to Overlord. Another snowmobile takes us on to Pangnirtung.</span></p>
     </div>
     <div class="route-grid">
       <div>
         <div class="mapbox">
-          <svg class="map" viewBox="0 0 440 380" role="img" aria-label="Tracé indicatif Qikiqtarjuaq – Pangnirtung">
+          <svg class="map" viewBox="0 0 440 380" role="img" aria-label="Tracé indicatif Qikiqtarjuaq – Pangnirtung" data-en="Approximate route from Qikiqtarjuaq to Pangnirtung">
             <path d="M0 300 C40 296 70 318 110 326 C150 334 170 360 200 380 L0 380Z" fill="#7FA36B" fill-opacity=".55"/>
             <path d="M118 324 C126 312 136 300 146 288" stroke="#7FA36B" stroke-opacity=".55" stroke-width="9" fill="none" stroke-linecap="round"/>
             <path d="M300 0 C310 30 330 52 360 66 C392 80 410 96 440 104 L440 0Z" fill="#7FA36B" fill-opacity=".55"/>
             <path d="M268 112 C285 100 300 90 318 78" stroke="#7FA36B" stroke-opacity=".55" stroke-width="9" fill="none" stroke-linecap="round"/>
-            <text x="16" y="364">CUMBERLAND SOUND</text>
-            <text x="356" y="28">DAVIS STRAIT</text>
+            <text x="16" y="364"><tspan class="fr">BAIE CUMBERLAND</tspan><tspan class="en">CUMBERLAND SOUND</tspan></text>
+            <text y="28"><tspan class="fr" x="330">DÉTROIT DE DAVIS</tspan><tspan class="en" x="356">DAVIS STRAIT</tspan></text>
             <mask id="rmask" maskUnits="userSpaceOnUse" x="0" y="0" width="440" height="380"><path class="rmask" pathLength="1" d="M120 322 C132 304 140 296 148 286 C160 268 166 250 176 230 C188 206 196 186 208 166 C222 144 236 126 256 114 C280 98 300 84 336 58" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/></mask><path class="routeline" mask="url(#rmask)" d="M120 322 C132 304 140 296 148 286 C160 268 166 250 176 230 C188 206 196 186 208 166 C222 144 236 126 256 114 C280 98 300 84 336 58"/>
             <g fill="#351A11" stroke="#C9F2AE" stroke-width="2.5"><circle cx="336" cy="58" r="7"/><circle cx="256" cy="114" r="5"/><circle cx="230" cy="139" r="4.5"/><circle cx="208" cy="166" r="4.5"/><circle cx="190" cy="200" r="4.5"/><circle cx="176" cy="230" r="4.5"/><circle cx="148" cy="286" r="5"/><circle cx="120" cy="322" r="7"/></g>
             <text class="place" x="20" y="316">Pangnirtung</text>
@@ -688,23 +723,23 @@ html.no-intro .curtain{display:none}
         <div class="legend"><span><i></i><span class="fr">Trace prévue</span><span class="en">Planned route</span></span><span><i class="c"></i><span class="fr">Camp / village</span><span class="en">Camp / village</span></span><span><i class="w"></i><span class="fr">Eau / glace de mer</span><span class="en">Water / sea ice</span></span></div>
       </div>
       <ol class="legs">
-        <li><div class="d"><span class="fr">Jour 1</span><span class="en">Day 1</span></div><div><h3><span class="fr">Iqaluit → Qikiqtarjuaq</span><span class="en">Iqaluit → Qikiqtarjuaq</span></h3><p><span class="fr">Vol vers Qikiqtarjuaq, préparation des pulkas, puis transfert en motoneige jusqu'à l'entrée du parc.</span><span class="en">Flight to Qikiqtarjuaq, pulk prep, then a snowmobile transfer to the park entrance.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 2</span><span class="en">Day 2</span></div><div><h3>North Pangnirtung → June Valley <span class="km">27 km</span></h3><p><span class="fr">La plus longue journée, sur la glace du fjord.</span><span class="en">The longest day, on the fjord ice.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 3</span><span class="en">Day 3</span></div><div><h3>June Valley → Glacier Lake <span class="km">16,5 km</span></h3><p><span class="fr">On remonte la vallée vers les glaciers.</span><span class="en">Up the valley towards the glaciers.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 4</span><span class="en">Day 4</span></div><div><h3>Glacier Lake → Summit Lake <span class="km">20,5 km</span></h3><p><span class="fr">Le point haut du col, le plus exposé au vent.</span><span class="en">The high point of the pass, the most exposed to wind.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 5</span><span class="en">Day 5</span></div><div><h3>Summit Lake → Windy Lake <span class="km">20 km</span></h3><p><span class="fr">On redescend vers le sud, entre les parois de granit.</span><span class="en">Heading south again, between granite walls.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 6</span><span class="en">Day 6</span></div><div><h3>Windy Lake → Overlord <span class="km">16 km</span></h3><p><span class="fr">Au pied du mont Thor. La partie sud se fait souvent sur la glace vive, en crampons. Transfert en motoneige jusqu'à Pangnirtung.</span><span class="en">Below Mount Thor. The south part is often bare ice, done in crampons. Snowmobile transfer to Pangnirtung.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 7</span><span class="en">Day 7</span></div><div><h3><span class="fr">Jour de réserve</span><span class="en">Spare day</span></h3><p><span class="fr">Une journée gardée pour attendre une fenêtre météo.</span><span class="en">A day kept aside to wait for a weather window.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 1</span><span class="en">Day 1</span></div><div><h3><span class="fr">Iqaluit → Qikiqtarjuaq</span><span class="en">Iqaluit → Qikiqtarjuaq</span></h3><p><span class="fr">Vol vers Qikiqtarjuaq, préparation des pulkas, puis transfert en motoneige jusqu'à l'entrée du parc.</span><span class="en">We fly to Qikiqtarjuaq, pack the pulks, then take a snowmobile to the park entrance.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 2</span><span class="en">Day 2</span></div><div><h3>North Pangnirtung → June Valley <span class="km">27&nbsp;km</span></h3><p><span class="fr">La plus longue journée, sur la glace du fjord.</span><span class="en">The longest day, on the fjord ice.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 3</span><span class="en">Day 3</span></div><div><h3>June Valley → Glacier Lake <span class="km"><span class="fr">16,5&nbsp;km</span><span class="en">16.5&nbsp;km</span></span></h3><p><span class="fr">On remonte la vallée vers les glaciers.</span><span class="en">Up the valley towards the glaciers.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 4</span><span class="en">Day 4</span></div><div><h3>Glacier Lake → Summit Lake <span class="km"><span class="fr">20,5&nbsp;km</span><span class="en">20.5&nbsp;km</span></span></h3><p><span class="fr">On atteint le point haut du col, l'endroit le plus exposé au vent.</span><span class="en">We reach the high point of the pass, the spot most exposed to wind.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 5</span><span class="en">Day 5</span></div><div><h3>Summit Lake → Windy Lake <span class="km">20&nbsp;km</span></h3><p><span class="fr">On redescend vers le sud entre les parois de granit, en passant sous le mont Thor.</span><span class="en">We head down the south side between granite walls, passing under Mount Thor.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 6</span><span class="en">Day 6</span></div><div><h3>Windy Lake → Overlord <span class="km">16&nbsp;km</span></h3><p><span class="fr">On passe le cercle arctique. Cette partie se fait souvent sur la glace vive, en crampons. Puis transfert en motoneige jusqu'à Pangnirtung.</span><span class="en">We cross the Arctic Circle. This stretch is often bare ice, done in crampons. Then a snowmobile transfer to Pangnirtung.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 7</span><span class="en">Day 7</span></div><div><h3><span class="fr">Jour de réserve</span><span class="en">Buffer day</span></h3><p><span class="fr">Une journée en réserve, si la météo nous bloque.</span><span class="en">A spare day in case the weather holds us up.</span></p></div></li>
         <li><div class="d"><span class="fr">Jour 8</span><span class="en">Day 8</span></div><div><h3><span class="fr">Pangnirtung → Iqaluit</span><span class="en">Pangnirtung → Iqaluit</span></h3><p><span class="fr">Vol retour.</span><span class="en">Flight back.</span></p></div></li>
         </ol>
     </div>
     <dl class="field">
-      <div><dt>15 h</dt><dd><span class="fr">de jour en avril</span><span class="en">of daylight in April</span></dd></div>
-      <div><dt>−20 / −30 °C</dt><dd><span class="fr">le jour, −30 à −40 °C la nuit</span><span class="en">by day, −30 to −40 °C at night</span></dd></div>
-      <div><dt>5 000–6 000</dt><dd><span class="fr">kcal par jour et par personne</span><span class="en">kcal per day per person</span></dd></div>
-      <div><dt>0,3–0,4 L</dt><dd><span class="fr">de naphta par personne et par jour : toute l'eau vient de la neige fondue</span><span class="en">of white gas per person per day: all our water is melted snow</span></dd></div>
-      <div><dt><span class="fr">Refuges</span><span class="en">Shelters</span></dt><dd><span class="fr">Des refuges d'urgence jalonnent le col : on campe près d'eux en cas de blizzard</span><span class="en">Emergency shelters line the pass: we camp near them in case of blizzard</span></dd></div>
-      <div><dt><span class="fr">Ours polaires</span><span class="en">Polar bears</span></dt><dd><span class="fr">Possibles dans la section nord : protocole de sécurité et équipement adaptés</span><span class="en">Possible in the north section: safety protocol and suitable equipment</span></dd></div>
+      <div><dt>15&nbsp;h</dt><dd><span class="fr">de jour en avril</span><span class="en">of daylight in April</span></dd></div>
+      <div><dt>−20 / −30&nbsp;°C</dt><dd><span class="fr">le jour, −30 à −40&nbsp;°C la nuit</span><span class="en">by day, −30 to −40&nbsp;°C at night</span></dd></div>
+      <div><dt><span class="fr">5&nbsp;000–6&nbsp;000</span><span class="en">5000–6000</span></dt><dd><span class="fr">kcal par jour et par personne</span><span class="en">kcal per day per person</span></dd></div>
+      <div><dt><span class="fr">0,3–0,4&nbsp;L</span><span class="en">0.3–0.4&nbsp;L</span></dt><dd><span class="fr">de naphta par personne et par jour&nbsp;: toute l'eau vient de la neige fondue</span><span class="en">of white gas per person per day: all our water is melted snow</span></dd></div>
+      <div><dt><span class="fr">Refuges</span><span class="en">Shelters</span></dt><dd><span class="fr">Des abris d'urgence jalonnent le col. On campe à côté, au cas où le blizzard se lève.</span><span class="en">Emergency shelters are spaced along the pass. We camp beside them in case a blizzard blows in.</span></dd></div>
+      <div><dt><span class="fr">Ours polaires</span><span class="en">Polar bears</span></dt><dd><span class="fr">Possibles dans la section nord. Laurent, chasseur du Nunavut, assure la surveillance.</span><span class="en">Possible in the northern section. Laurent, a hunter from Nunavut, keeps watch.</span></dd></div>
     </dl>
   </div>
 </section>
@@ -713,20 +748,20 @@ html.no-intro .curtain{display:none}
   <div class="wrap">
     <div class="split">
       <h2><span class="fr">4 + 3 = une cordée</span><span class="en">4 + 3 = one crew</span></h2>
-      <p class="lede"><span class="fr">Sept personnes, des métiers différents, un même traîneau à tirer. Voici celles et ceux qui partent, les autres arrivent bientôt.</span><span class="en">Seven people, different trades, the same sled to haul. Here's who's going, the rest are coming soon.</span></p>
+      <p class="lede"><span class="fr">Quatre de Montréal, trois du Nunavut. Chacun a son rôle dans l'expédition, et sa pulka à tirer.</span><span class="en">Four from Montréal, three from Nunavut. Everyone has a job on the expedition, and a pulk to haul.</span></p>
     </div>
     <div class="crew">
       <h3 class="city">Montréal <small>45°30′N</small></h3>
       <ul class="mates">
         
-        <li class="mate"><div class="por"><img src="team-doriane.jpg" alt="Doriane en doudoune bleue sur un lac gelé"></div><h3>Doriane</h3><p class="job"><span class="fr">Designer · ultra-traileuse et triathlète d'hiver</span><span class="en">Designer · ultra-trail runner and winter triathlete</span></p><p class="role"><span class="fr">Vidéo et contenu pour les réseaux sociaux</span><span class="en">Video and social media content</span></p><a class="ig" href="https://www.instagram.com/la_dodo_touch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@la_dodo_touch</a></li>
-        <li class="mate"><div class="por"><img src="team-victor.jpg" alt="Portrait de Victor en forêt, casquette et doudoune"></div><h3>Victor</h3><p class="job"><span class="fr">Traileur, cycliste de gravel et moniteur de ski</span><span class="en">Trail runner, gravel cyclist and ski instructor</span></p><p class="role"><span class="fr">Photo et logistique</span><span class="en">Photo and logistics</span></p><a class="ig" href="https://www.instagram.com/victorbellemin/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@victorbellemin</a></li>
-        <li class="mate"><div class="por"><img src="team-ambroise.jpg" alt="Ambroise en tuque jaune devant une paroi rocheuse"></div><h3>Ambroise</h3><p class="job"><span class="fr">Directeur stratégique · traileur, parapentiste et cycliste de gravel</span><span class="en">Strategy director · trail runner, paraglider and gravel cyclist</span></p><p class="role"><span class="fr">Partenariats avec les marques, premiers soins et météo</span><span class="en">Brand partnerships, first aid and weather</span></p><a class="ig" href="https://www.instagram.com/ambroiselallz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@ambroiselallz</a></li>
-      <li class="mate"><div class="por"><img src="team-etienne.jpg" alt="Etienne en randonnée dans une vallée de montagne" style="object-position:45% 35%"></div><h3>Etienne</h3><p class="job"><span class="fr">Ultra-traileur et cycliste</span><span class="en">Ultra-trail runner and cyclist</span></p><p class="role"><span class="fr">Navigation et nourriture</span><span class="en">Navigation and food</span></p><a class="ig" href="https://www.instagram.com/etienneclemnt/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@etienneclemnt</a></li>
+        <li class="mate"><div class="por"><img src="team-doriane.jpg" alt="Doriane en doudoune bleue sur un lac gelé" data-en="Doriane in a blue down jacket on a frozen lake" loading="lazy" decoding="async"></div><h3>Doriane</h3><p class="job"><span class="fr">Designer · ultra-traileuse et triathlète d'hiver</span><span class="en">Designer · ultra-trail runner and winter triathlete</span></p><p class="role"><span class="fr">Vidéo et contenu pour les réseaux sociaux</span><span class="en">Video and social media content</span></p><a class="ig" href="https://www.instagram.com/la_dodo_touch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@la_dodo_touch</a></li>
+        <li class="mate"><div class="por"><img src="team-victor.jpg" alt="Portrait de Victor en forêt, casquette et doudoune" data-en="Portrait of Victor in the forest, wearing a cap and a down jacket" loading="lazy" decoding="async"></div><h3>Victor</h3><p class="job"><span class="fr">Traileur, cycliste de gravel et moniteur de ski</span><span class="en">Trail runner, gravel rider and ski instructor</span></p><p class="role"><span class="fr">Photo et logistique</span><span class="en">Photo and logistics</span></p><a class="ig" href="https://www.instagram.com/victorbellemin/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@victorbellemin</a></li>
+        <li class="mate"><div class="por"><img src="team-ambroise.jpg" alt="Ambroise en tuque jaune devant une paroi rocheuse" data-en="Ambroise in a yellow toque in front of a rock wall" loading="lazy" decoding="async"></div><h3>Ambroise</h3><p class="job"><span class="fr">Directeur stratégique · traileur, parapentiste et cycliste de gravel</span><span class="en">Strategy director · trail runner, paraglider pilot and gravel rider</span></p><p class="role"><span class="fr">Partenariats avec les marques, premiers soins et météo</span><span class="en">Brand partnerships, first aid and weather</span></p><a class="ig" href="https://www.instagram.com/ambroiselallz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@ambroiselallz</a></li>
+      <li class="mate"><div class="por"><img src="team-etienne.jpg" alt="Etienne en randonnée dans une vallée de montagne" data-en="Etienne hiking in a mountain valley" style="object-position:45% 35%" loading="lazy" decoding="async"></div><h3>Etienne</h3><p class="job"><span class="fr">Ultra-traileur et cycliste</span><span class="en">Ultra-trail runner and cyclist</span></p><p class="role"><span class="fr">Navigation et nourriture</span><span class="en">Navigation and food</span></p><a class="ig" href="https://www.instagram.com/etienneclemnt/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@etienneclemnt</a></li>
       </ul>
       <h3 class="city">Nunavut <small>63°44′N</small></h3>
       <ul class="mates">
-        <li class="mate"><div class="por"><img src="team-anthony.jpg" alt="Anthony au panneau du Cercle arctique"></div><h3>Anthony</h3><p class="job"><span class="fr">Designer graphique · ultra-traileur et musher</span><span class="en">Graphic designer · ultra-trail runner and musher</span></p><p class="role"><span class="fr">Chef d'expédition, sécurité, photo, communications</span><span class="en">Expedition lead, safety, photo, communications</span></p><a class="ig" href="https://www.instagram.com/anthony.morell/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@anthony.morell</a></li><li class="mate"><div class="por" style="background:var(--paper)"><canvas data-art="face" data-ink="#351A11" data-seed="6" aria-hidden="true"></canvas></div><h3>Laurent</h3><p class="job"><span class="fr">Chasseur et pêcheur</span><span class="en">Hunter and fisherman</span></p><p class="role"><span class="fr">Surveillance des ours et connaissance du Nord</span><span class="en">Bear monitor and knowledge of the North</span></p><a class="ig" href="https://www.instagram.com/laurentbeausoleil/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@laurentbeausoleil</a></li><li class="mate"><div class="por" style="background:var(--mint)"><canvas data-art="face" data-ink="#351A11" data-seed="7" aria-hidden="true"></canvas></div><h3>Tim</h3><p class="job"><span class="fr">Pharmacien · randonneur de l'extrême</span><span class="en">Pharmacist · extreme hiker</span></p><p class="role"><span class="fr">Premiers soins, pharmacie et repas lyophilisés</span><span class="en">First aid, pharmacy and freeze-dried meals</span></p><a class="ig" href="https://www.instagram.com/tim_logan_backpacking/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@tim_logan_backpacking</a></li>
+        <li class="mate"><div class="por"><img src="team-anthony.jpg" alt="Anthony au panneau du Cercle arctique" data-en="Anthony at the Arctic Circle sign" loading="lazy" decoding="async"></div><h3>Anthony</h3><p class="job"><span class="fr">Designer graphique · ultra-traileur et musher</span><span class="en">Graphic designer · ultra-trail runner and musher</span></p><p class="role"><span class="fr">Chef d'expédition, sécurité, photo, communications</span><span class="en">Expedition lead, safety, photo, communications</span></p><a class="ig" href="https://www.instagram.com/anthony.morell/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@anthony.morell</a></li><li class="mate"><div class="por" style="background:var(--paper)"><canvas data-art="face" data-ink="#351A11" data-seed="6" aria-hidden="true"></canvas></div><h3>Laurent</h3><p class="job"><span class="fr">Chasseur et pêcheur</span><span class="en">Hunter and fisherman</span></p><p class="role"><span class="fr">Surveillance des ours et connaissance du Nord</span><span class="en">Bear watch and knowledge of the North</span></p><a class="ig" href="https://www.instagram.com/laurentbeausoleil/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@laurentbeausoleil</a></li><li class="mate"><div class="por" style="background:var(--mint)"><canvas data-art="face" data-ink="#351A11" data-seed="7" aria-hidden="true"></canvas></div><h3>Tim</h3><p class="job"><span class="fr">Pharmacien · randonneur de l'extrême</span><span class="en">Pharmacist · extreme hiker</span></p><p class="role"><span class="fr">Premiers soins, pharmacie et repas lyophilisés</span><span class="en">First aid, pharmacy and freeze-dried meals</span></p><a class="ig" href="https://www.instagram.com/tim_logan_backpacking/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@tim_logan_backpacking</a></li>
       </ul>
     </div>
   </div>
@@ -735,23 +770,23 @@ html.no-intro .curtain{display:none}
 <section id="materiel">
   <div class="wrap">
     <div class="split">
-      <h2><span class="fr">Le matériel qui nous garde au chaud</span><span class="en">The gear that keeps us warm</span></h2>
-      <p class="lede"><span class="fr">Chaque article compte entre −30 et −40 °C. Un prêt, un don ou un rabais nous aide tout autant.</span><span class="en">Every item matters at −30 to −40 °C. A loan, a donation or a discount helps just as much.</span></p>
+      <h2><span class="fr">Le matériel qu'il nous faut</span><span class="en">The gear we need</span></h2>
+      <p class="lede"><span class="fr">Voici la liste complète, avec ce qu'on a déjà et ce qu'on cherche encore. Un prêt, un don ou un rabais&nbsp;: tout nous aide.</span><span class="en">Here's the full list, with what we already have and what we're still looking for. A loan, a donation or a discount: it all helps.</span></p>
     </div>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ink" x="-10%" y="-20%" width="120%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" result="d"/><feGaussianBlur in="d" stdDeviation=".25"/></filter><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter></svg>
     <div class="tablebox">
       <table>
-        <thead><tr><th aria-hidden="true"></th><th><span class="fr">Article</span><span class="en">Item</span></th><th><span class="fr">Pour</span><span class="en">For</span></th><th><span class="fr">Pourquoi</span><span class="en">Why</span></th><th><span class="fr">Statut</span><span class="en">Status</span></th></tr></thead>
+        <thead><tr><th aria-hidden="true"></th><th><span class="fr">Article</span><span class="en">Item</span></th><th><span class="fr">Pour qui</span><span class="en">Who for</span></th><th><span class="fr">Pourquoi</span><span class="en">Why</span></th><th><span class="fr">Statut</span><span class="en">Status</span></th></tr></thead>
         <tbody>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M14 44 L22 6 Q23 3 25 6 L21 44Z"/><path pathLength="1" d="M26 44 L34 6 Q35 3 37 6 L33 44Z"/><path pathLength="1" d="M18 28h6M30 28h6"/></g></svg></td><td><b><span class="fr">Skis hors-piste à carres métalliques</span><span class="en">Metal-edged backcountry skis</span></b><small><span class="fr">avec fixations BC qui tiennent au grand froid</span><span class="en">with BC bindings that hold up in deep cold</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Avancer avec 40 kg derrière soi</span><span class="en">Moving with 40 kg behind you</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M14 6h14v20l12 6q4 2 4 6v4H8v-6q0-4 3-6l3-2Z"/><path pathLength="1" d="M14 14h14M14 20h14M8 38h36"/></g></svg></td><td><b><span class="fr">Bottes de ski isolées</span><span class="en">Insulated ski boots</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Garder les pieds au chaud à −40 °C</span><span class="en">Keeping feet warm at −40 °C</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M8 22h32q4 0 4 4v2H6v-2q0-4 2-4Z"/><path pathLength="1" d="M8 28l-2 8M15 28l-1 8M22 28v8M29 28l1 8M36 28l2 8M43 28l3 6"/><path pathLength="1" d="M14 22l4-8h12l4 8"/></g></svg></td><td><b><span class="fr">Crampons à glace</span><span class="en">Ice crampons</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">La partie sud se fait sur la glace vive, sans skis</span><span class="en">The south part is bare ice, no skis</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M4 30q2 8 10 8h28q4 0 4-4v-4Z"/><path pathLength="1" d="M8 30q0-10 12-10h16q10 0 10 10"/><path pathLength="1" d="M14 20l4-6M30 20l-2-6"/><path pathLength="1" d="M46 32l-40 8" stroke-dasharray="2 3"/></g></svg></td><td><b><span class="fr">Pulkas et harnais</span><span class="en">Pulks and harnesses</span></b><small><span class="fr">+ sac de transport 130 L</span><span class="en">+ 130 L duffel</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Tirer tout le camp</span><span class="en">Hauling the whole camp</span></td><td><span class="pill part"><span class="fr"><span class="hw" role="img" aria-label="En partie" style="--src:url(part.png);aspect-ratio:261/96"></span></span><span class="en">Partly</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M18 4h12q10 0 10 12v24q0 4-4 4H12q-4 0-4-4V16Q8 4 18 4Z"/><path pathLength="1" d="M14 14q10 4 20 0M8 24h32M8 32h32M30 4v40"/></g></svg></td><td><b><span class="fr">Sacs de couchage −40 °C</span><span class="en">−40 °C sleeping bags</span></b><small><span class="fr">+ sursac pare-vapeur</span><span class="en">+ vapour barrier liner</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Dormir au chaud et au sec</span><span class="en">Sleeping warm and dry</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><rect pathLength="1" x="6" y="14" width="36" height="20" rx="3"/><path pathLength="1" d="M14 14v20M22 14v20M30 14v20M38 14v20"/><path pathLength="1" d="M6 38q18 6 36 0"/></g></svg></td><td><b><span class="fr">Matelas isolés R 7 à 9</span><span class="en">R 7–9 insulated pads</span></b><small><span class="fr">+ matelas de mousse</span><span class="en">+ foam pad</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Isoler du sol gelé</span><span class="en">Insulation from frozen ground</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M18 6q6 4 12 0l10 6 6 16-6 2-2-8v22H10V22l-2 8-6-2 6-16Z"/><path pathLength="1" d="M24 10v34M10 26h28M10 34h28"/></g></svg></td><td><b><span class="fr">Doudounes et pantalons en duvet</span><span class="en">Down parkas and pants</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Matins, soirs et camp</span><span class="en">Mornings, evenings and camp</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M14 44 L22 6 Q23 3 25 6 L21 44Z"/><path pathLength="1" d="M26 44 L34 6 Q35 3 37 6 L33 44Z"/><path pathLength="1" d="M18 28h6M30 28h6"/></g></svg></td><td><b><span class="fr">Skis hors-piste à carres métalliques</span><span class="en">Metal-edged backcountry skis</span></b><small><span class="fr">avec fixations BC qui tiennent au grand froid</span><span class="en">with BC bindings that hold up in deep cold</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Avancer avec 40&nbsp;kg derrière soi</span><span class="en">Moving with 40&nbsp;kg behind you</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M14 6h14v20l12 6q4 2 4 6v4H8v-6q0-4 3-6l3-2Z"/><path pathLength="1" d="M14 14h14M14 20h14M8 38h36"/></g></svg></td><td><b><span class="fr">Bottes de ski isolées</span><span class="en">Insulated ski boots</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Garder les pieds au chaud à −40&nbsp;°C</span><span class="en">Keeping feet warm at −40&nbsp;°C</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M8 22h32q4 0 4 4v2H6v-2q0-4 2-4Z"/><path pathLength="1" d="M8 28l-2 8M15 28l-1 8M22 28v8M29 28l1 8M36 28l2 8M43 28l3 6"/><path pathLength="1" d="M14 22l4-8h12l4 8"/></g></svg></td><td><b><span class="fr">Crampons à glace</span><span class="en">Ice crampons</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">La partie sud se fait sur la glace vive, sans skis</span><span class="en">The southern section is bare ice, done without skis</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M4 30q2 8 10 8h28q4 0 4-4v-4Z"/><path pathLength="1" d="M8 30q0-10 12-10h16q10 0 10 10"/><path pathLength="1" d="M14 20l4-6M30 20l-2-6"/><path pathLength="1" d="M46 32l-40 8" stroke-dasharray="2 3"/></g></svg></td><td><b><span class="fr">Pulkas et harnais</span><span class="en">Pulks and harnesses</span></b><small><span class="fr">+ sac de transport 130&nbsp;L</span><span class="en">+ 130&nbsp;L duffel</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Tirer tout le camp</span><span class="en">Hauling the whole camp</span></td><td><span class="pill part"><span class="fr"><span class="hw" role="img" aria-label="En partie" style="--src:url(part.png);aspect-ratio:261/96"></span></span><span class="en">Partly</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M18 4h12q10 0 10 12v24q0 4-4 4H12q-4 0-4-4V16Q8 4 18 4Z"/><path pathLength="1" d="M14 14q10 4 20 0M8 24h32M8 32h32M30 4v40"/></g></svg></td><td><b><span class="fr">Sacs de couchage −40&nbsp;°C</span><span class="en">−40&nbsp;°C sleeping bags</span></b><small><span class="fr">+ doublure pare-vapeur</span><span class="en">+ vapour barrier liner</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Dormir au chaud et au sec</span><span class="en">Sleeping warm and dry</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><rect pathLength="1" x="6" y="14" width="36" height="20" rx="3"/><path pathLength="1" d="M14 14v20M22 14v20M30 14v20M38 14v20"/><path pathLength="1" d="M6 38q18 6 36 0"/></g></svg></td><td><b><span class="fr">Matelas isolants, valeur R de 7 à 9</span><span class="en">Insulated pads, R-value 7–9</span></b><small><span class="fr">+ matelas de mousse</span><span class="en">+ foam pad</span></small></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Isoler du sol gelé</span><span class="en">Insulation from frozen ground</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M18 6q6 4 12 0l10 6 6 16-6 2-2-8v22H10V22l-2 8-6-2 6-16Z"/><path pathLength="1" d="M24 10v34M10 26h28M10 34h28"/></g></svg></td><td><b><span class="fr">Doudounes et pantalons en duvet</span><span class="en">Down parkas and pants</span></b></td><td class="q"><span class="fr">Chacun</span><span class="en">Each</span></td><td><span class="fr">Pour les pauses, le camp et les matins froids</span><span class="en">For breaks, camp and cold mornings</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
           <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M4 40 L24 8 L44 40Z"/><path pathLength="1" d="M24 8 L18 40M24 8 L30 40"/><path pathLength="1" d="M20 40 L24 28 L28 40"/><path pathLength="1" d="M2 40h44"/><path pathLength="1" d="M4 40l-2 4M44 40l2 4"/></g></svg></td><td><b><span class="fr">Tente dôme de camp de base</span><span class="en">Basecamp dome tent</span></b><small><span class="fr">4 personnes et plus</span><span class="en">4+ people</span></small></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">Se réchauffer à plusieurs, résister au blizzard</span><span class="en">Warming up together, standing up to blizzards</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
-          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M12 12h24l-2 30H14Z"/><path pathLength="1" d="M10 12h28M16 6h16v6"/><path pathLength="1" d="M18 22q6 4 12 0M18 30h12"/></g></svg></td><td><b><span class="fr">Nourriture et collations riches en gras</span><span class="en">High-fat food and snacks</span></b><small><span class="fr">~1 kg de nourriture sèche par jour</span><span class="en">~1 kg dry food per day</span></small></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">5 000 à 6 000 kcal par jour</span><span class="en">5,000–6,000 kcal per day</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
+          <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M12 12h24l-2 30H14Z"/><path pathLength="1" d="M10 12h28M16 6h16v6"/><path pathLength="1" d="M18 22q6 4 12 0M18 30h12"/></g></svg></td><td><b><span class="fr">Nourriture et collations riches en gras</span><span class="en">High-fat food and snacks</span></b><small><span class="fr">environ 1&nbsp;kg de nourriture sèche par personne et par jour</span><span class="en">about 1&nbsp;kg of dry food per person per day</span></small></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">5&nbsp;000 à 6&nbsp;000&nbsp;kcal par jour</span><span class="en">5,000–6,000&nbsp;kcal per day</span></td><td><span class="pill need"><span class="fr"><span class="hw" role="img" aria-label="Recherché" style="--src:url(need.png);aspect-ratio:285/96"></span></span><span class="en">Needed</span></span></td></tr>
           <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M10 22h28v6H10Z"/><path pathLength="1" d="M14 28l-4 12M34 28l4 12M24 28v12"/><path pathLength="1" d="M18 22q-2-6 2-10M24 22q-2-8 2-12M30 22q-2-6 2-10"/><path pathLength="1" d="M38 34h6v8h-6"/></g></svg></td><td><b><span class="fr">Réchauds à naphta</span><span class="en">White-gas stoves</span></b></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">Fondre la neige pour toute notre eau</span><span class="en">Melting snow for all our water</span></td><td><span class="pill ok"><span class="fr"><span class="hw" role="img" aria-label="On l'a" style="--src:url(ok.png);aspect-ratio:379/96"></span></span><span class="en">Got it</span></span></td></tr>
           <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><rect pathLength="1" x="14" y="14" width="18" height="28" rx="3"/><path pathLength="1" d="M18 20h10v8H18Z"/><path pathLength="1" d="M28 14V4"/><path pathLength="1" d="M34 8q4 2 6 6M36 4q6 3 8 9"/><circle pathLength="1" cx="23" cy="36" r="2"/></g></svg></td><td><b><span class="fr">Communication satellite</span><span class="en">Satellite communication</span></b><small><span class="fr">balises et téléphone satellite</span><span class="en">beacons and satellite phone</span></small></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">Sécurité et suivi en direct</span><span class="en">Safety and live tracking</span></td><td><span class="pill ok"><span class="fr"><span class="hw" role="img" aria-label="On l'a" style="--src:url(ok.png);aspect-ratio:379/96"></span></span><span class="en">Got it</span></span></td></tr>
           <tr><td class="ill"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><g filter="url(#rough)"><path pathLength="1" d="M16 4q8 0 8 10v20q0 10-8 10T8 34V14Q8 4 16 4Z"/><path pathLength="1" d="M34 4q8 0 8 10v20q0 10-8 10t-8-10V14q0-10 8-10Z"/><path pathLength="1" d="M8 20h16M26 20h16M10 30h12M28 30h12"/></g></svg></td><td><b><span class="fr">Raquettes</span><span class="en">Snowshoes</span></b></td><td class="q"><span class="fr">Groupe</span><span class="en">Group</span></td><td><span class="fr">Sections de neige profonde</span><span class="en">Deep snow sections</span></td><td><span class="pill ok"><span class="fr"><span class="hw" role="img" aria-label="On l'a" style="--src:url(ok.png);aspect-ratio:379/96"></span></span><span class="en">Got it</span></span></td></tr>
@@ -765,24 +800,24 @@ html.no-intro .curtain{display:none}
 <section id="partenaires" style="padding-top:0">
   <div class="wrap">
     <div class="split">
-      <h2><span class="fr">Ce qu'on vous offre en échange</span><span class="en">What we give back</span></h2>
-      <p class="lede"><span class="fr">Votre matériel sera filmé et photographié là où il compte : entre −30 et −40 °C, dans le col Akshayuk. Tout ce contenu est pour vous.</span><span class="en">Your gear gets filmed and photographed where it matters: at −30 to −40 °C, in Akshayuk Pass. All of that content is yours.</span></p>
+      <h2><span class="fr">Ce qu'on vous offre en échange</span><span class="en">What you get in return</span></h2>
+      <p class="lede"><span class="fr">Votre matériel sera filmé et photographié en conditions réelles&nbsp;: entre −30 et −40&nbsp;°C, dans le col Akshayuk. Ces images sont à vous.</span><span class="en">Your gear gets filmed and photographed in real conditions: −30 to −40&nbsp;°C, in Akshayuk Pass. The footage is yours to use.</span></p>
     </div>
     <ol class="offer">
-      <li><figure><img src="pulka-blocs.jpg" alt="Un équipier tire sa pulka entre les blocs enneigés, sous les parois du col"></figure><span class="when"><span class="fr">Pendant</span><span class="en">During</span></span><h3><span class="fr">Un vrai test terrain</span><span class="en">Real-world product testing</span></h3><p><span class="fr">8 jours entre −30 et −40 °C, 100 km à tirer les pulkas, 7 testeurs. Un rapport écrit pour chaque produit : ce qui a tenu, ce qui a cassé, ce qu'on changerait.</span><span class="en">8 days at −30 to −40 °C, 100 km hauling pulks, 7 testers. A written report for each product: what held up, what broke, what we'd change.</span></p></li>
-      <li><figure><img src="header-ski.jpg" alt="Un skieur en crampons tire sa pulka sur la glace bleue entre les parois de granit"></figure><span class="when"><span class="fr">Pendant et après</span><span class="en">During and after</span></span><h3><span class="fr">Photos et vidéos pour votre marketing</span><span class="en">Photos and videos for your marketing</span></h3><p><span class="fr">Photos haute résolution et rushs vidéo, libres d'utilisation sur vos réseaux sociaux, votre site et vos campagnes.</span><span class="en">High-resolution photos and raw footage, free to use on your social media, website and campaigns.</span></p></li>
-      <li><figure><img src="vallee-film.jpg" alt="Vallée gelée et sommets de granit du col Akshayuk, sur pellicule"></figure><span class="when"><span class="fr">Au retour, à Montréal</span><span class="en">Back in Montréal</span></span><h3><span class="fr">Le film, projeté à Montréal</span><span class="en">The film, screened in Montréal</span></h3><p><span class="fr">Une projection privée pour la communauté plein air de Montréal, avec questions-réponses et quelques bières. Votre marque au générique et à l'écran, en action.</span><span class="en">A private screening for Montréal's outdoor community, with a Q&amp;A and a few beers. Your brand in the credits and on screen, in action.</span></p></li>
-      <li><figure><img src="fjord-glace.jpg" alt="Glace de mer chaotique dans le fjord, entre deux falaises enneigées"></figure><span class="when"><span class="fr">Ensuite</span><span class="en">Then</span></span><h3><span class="fr">Le film en festivals</span><span class="en">The film at festivals</span></h3><p><span class="fr">Soumis aux festivals de films de montagne et d'aventure au Québec, au Canada et à l'international.</span><span class="en">Submitted to mountain and adventure film festivals in Québec, across Canada and internationally.</span></p></li>
+      <li><figure><img src="pulka-blocs.jpg" alt="Un équipier tire sa pulka entre les blocs enneigés, sous les parois du col" data-en="A skier hauls a pulk between snow-covered boulders, under the walls of the pass" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant</span><span class="en">During</span></span><h3><span class="fr">Un vrai test terrain</span><span class="en">A real field test</span></h3><p><span class="fr">100&nbsp;km à tirer les pulkas, entre −30 et −40&nbsp;°C, avec 7 testeurs. Un rapport écrit pour chaque produit&nbsp;: ce qui a tenu, ce qui a cassé, ce qu'on changerait.</span><span class="en">100&nbsp;km hauling pulks at −30 to −40&nbsp;°C, with 7 testers. A written report on each product: what held up, what broke, what we'd change.</span></p></li>
+      <li><figure><img src="header-ski.jpg" alt="Un skieur en crampons tire sa pulka sur la glace bleue entre les parois de granit" data-en="A skier in crampons hauls a pulk over blue ice between granite walls" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant et après</span><span class="en">During and after</span></span><h3><span class="fr">Photos et vidéos pour votre marketing</span><span class="en">Photos and videos for your marketing</span></h3><p><span class="fr">Photos haute résolution et rushs vidéo, libres d'utilisation sur vos réseaux sociaux, votre site et vos campagnes.</span><span class="en">High-resolution photos and raw footage, free to use on your social media, website and campaigns.</span></p></li>
+      <li><figure><img src="vallee-film.jpg" alt="Vallée gelée et sommets de granit du col Akshayuk, sur pellicule" data-en="Frozen valley and granite peaks of Akshayuk Pass, shot on film" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Au retour, à Montréal</span><span class="en">Back in Montréal</span></span><h3><span class="fr">Le film, projeté à Montréal</span><span class="en">The film, screened in Montréal</span></h3><p><span class="fr">Une projection privée pour la communauté plein air de Montréal, avec questions-réponses et quelques bières. Votre marque au générique et à l'écran, en action.</span><span class="en">A private screening for Montréal's outdoor community, with a Q&amp;A and a few beers. Your brand in the credits and on screen, in action.</span></p></li>
+      <li><figure><img src="fjord-glace.jpg" alt="Glace de mer chaotique dans le fjord, entre deux falaises enneigées" data-en="Jumbled sea ice in the fjord, between two snow-covered cliffs" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Ensuite</span><span class="en">Then</span></span><h3><span class="fr">Le film en festivals</span><span class="en">The film at festivals</span></h3><p><span class="fr">On le soumet aux festivals de films de montagne et d'aventure, au Québec, au Canada et à l'international.</span><span class="en">We submit it to mountain and adventure film festivals in Québec, across Canada and abroad.</span></p></li>
       </ol>
-    <div class="ask"><h3><span class="fr">Ce qu'on vous demande</span><span class="en">What we're asking for</span></h3><p><span class="fr">Du matériel spécialisé adapté à l'expédition. Et tout soutien qui aide le projet à avancer.</span><span class="en">Specialized gear suited to the expedition. And any support that helps the project move forward.</span></p><a class="btn" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a></div>
+    <div class="ask"><h3><span class="fr">Ce qu'on vous demande</span><span class="en">What we're asking for</span></h3><p><span class="fr">Un prêt, un don ou un rabais sur un article de la liste. Un seul article, c'est déjà beaucoup.</span><span class="en">A loan, a donation or a discount on an item from the list. Even a single item goes a long way.</span></p><a class="btn" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a></div>
 
-    <h2 style="margin-top:96px"><span class="fr">Selon votre contribution</span><span class="en">By contribution</span></h2>
+    <h2 style="margin-top:96px"><span class="fr">Selon votre contribution</span><span class="en">Depending on your contribution</span></h2>
     <ol class="tiers">
       <li><h3><span class="fr">Ami de l'expédition</span><span class="en">Friend of the expedition</span></h3><p class="give"><span class="fr">Un rabais ou du petit équipement</span><span class="en">A discount or small gear</span></p><p class="get"><span class="fr">Votre nom sur ce site et au générique du film, une publication de remerciement et une invitation à la soirée de projection.</span><span class="en">Your name on this site and in the film credits, a thank-you post and an invite to the screening night.</span></p></li>
       <li class="main"><h3><span class="fr">Partenaire matériel</span><span class="en">Gear partner</span></h3><p class="give"><span class="fr">Le prêt ou le don d'un article clé</span><span class="en">The loan or gift of a key item</span></p><p class="get"><span class="fr">Un lot de photos et de vidéos de votre produit sur le terrain pour vos réseaux, votre logo ici et au générique, et votre logo à l'écran lors de la soirée de projection.</span><span class="en">A set of field photos and videos of your product for your socials, your logo here and in the credits, and your logo on screen at the screening night.</span></p></li>
       <li><h3><span class="fr">Partenaire principal</span><span class="en">Lead partner</span></h3><p class="give"><span class="fr">L'équipement d'une partie de l'équipe</span><span class="en">Outfitting part of the team</span></p><p class="get"><span class="fr">Une courte vidéo montée pour vos réseaux, votre logo sur les pulkas et les tentes (donc dans le film), et la coprésentation de la soirée de projection à Montréal.</span><span class="en">A short video edited for your socials, your logo on the pulks and tents (so in the film), and co-hosting the screening night in Montréal.</span></p></li>
     </ol>
-    <p class="promise"><span class="fr">Pour tous nos partenaires : un bilan clair de l'utilisation du matériel à notre retour, et une visibilité au Québec comme au Nunavut.</span><span class="en">For every partner: a clear report on how the gear was used when we're back, and reach in both Québec and Nunavut.</span></p>
+    <p class="promise"><span class="fr">Pour tous nos partenaires&nbsp;: un compte rendu de l'utilisation du matériel à notre retour, et de la visibilité au Québec comme au Nunavut.</span><span class="en">For every partner: a report on how the gear was used once we're back, and visibility in both Québec and Nunavut.</span></p>
   </div>
 </section>
 
@@ -804,17 +839,17 @@ html.no-intro .curtain{display:none}
     <div class="foot-top">
       <div class="col">
         <span class="label"><span class="fr">Expédition</span><span class="en">Expedition</span> <span class="syl" lang="iu">ᐊᐅᔪᐃᑦᑐᖅ</span></span>
-        <p><span class="fr">Sept amis de Montréal et du Nunavut, une pulka chacun, et les 100 km du col Akshayuk à traverser en avril 2027.</span><span class="en">Seven friends from Montréal and Nunavut, a pulk each, and the 100 km of Akshayuk Pass to cross in April 2027.</span></p>
-        <span class="label" style="margin-top:14px"><span class="fr">Prêt pour l'aventure ?</span><span class="en">Ready for adventure?</span></span>
-        <p><span class="fr">Écris-nous pour recevoir notre dossier de commandite ou discuter d'un prêt de matériel.</span><span class="en">Write to us for our sponsorship package or to talk about a gear loan.</span></p>
+        <p><span class="fr">Sept amis de Montréal et du Nunavut, une pulka chacun, et les 100&nbsp;km du col Akshayuk à traverser en avril 2027.</span><span class="en">Seven friends from Montréal and Nunavut, a pulk each, and the 100&nbsp;km of Akshayuk Pass to cross in April 2027.</span></p>
+        <span class="label" style="margin-top:14px"><span class="fr">Envie d'embarquer&nbsp;?</span><span class="en">Want to get on board?</span></span>
+        <p><span class="fr">Écrivez-nous pour recevoir notre dossier de commandite ou discuter d'un prêt de matériel.</span><span class="en">Write to us for our sponsorship package, or to talk about lending gear.</span></p>
         <div class="mailrow">
-          <span class="mailbox" id="email">dorianecara2@gmail.com</span>
+          <a class="mailbox" id="email" href="mailto:dorianecara2@gmail.com?subject=Partenariat%20%E2%80%93%20Exp%C3%A9dition%20Auyuittuq%202027">dorianecara2@gmail.com</a>
           <button class="btn mint" id="copy" type="button"><span class="fr">Copier</span><span class="en">Copy</span></button>
           <span class="copied" id="copied" hidden><span class="fr">Copié</span><span class="en">Copied</span></span>
         </div>
       </div>
-      <nav class="links" aria-label="Pied de page">
-        <a href="#origines"><span class="fr">Les origines</span><span class="en">Origins</span></a>
+      <nav class="links" aria-label="Pied de page" data-en="Footer">
+        <a href="#projet"><span class="fr">Le projet</span><span class="en">The project</span></a>
         <a href="#trace"><span class="fr">La trace</span><span class="en">The route</span></a>
         <a href="#equipe"><span class="fr">L'équipe</span><span class="en">Team</span></a>
         <a href="#materiel"><span class="fr">Matériel recherché</span><span class="en">Gear needed</span></a>
@@ -822,7 +857,7 @@ html.no-intro .curtain{display:none}
       </nav>
     </div>
     <span class="wordmark" id="wordmark" lang="iu" aria-label="Auyuittuq"><span id="wm-in">ᐊᐅᔪᐃᑦᑐᖅ</span></span>
-    <div class="foot-bottom"><span>© 2026 <span class="fr">Expédition</span><span class="en">Expedition</span> Auyuittuq</span><button type="button" class="replay" id="replay"><span class="fr">Revoir l'animation</span><span class="en">Replay intro</span></button><span>Montréal · Iqaluit · <span class="fr">Photos : Antho et Doriane</span><span class="en">Photos: Antho and Doriane</span></span></div>
+    <div class="foot-bottom"><span>© 2026 <span class="fr">Expédition Auyuittuq</span><span class="en">Auyuittuq Expedition</span></span><button type="button" class="replay" id="replay"><span class="fr">Revoir l'animation</span><span class="en">Replay intro</span></button><span>Montréal · Iqaluit · <span class="fr">Photos&nbsp;: Antho et Doriane</span><span class="en">Photos: Antho and Doriane</span></span></div>
   </div>
 </footer>
 
@@ -830,15 +865,25 @@ html.no-intro .curtain{display:none}
 (function(){
   /* language */
   var fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
-  function set(l){
+  var TITLE={fr:document.title,en:'Auyuittuq Expedition 2027 · Akshayuk Pass by ski and pulk'};
+  function set(l,save){
     document.body.classList.toggle('en',l==='en');
     document.documentElement.lang=l;
+    document.title=TITLE[l];
     fr.setAttribute('aria-pressed',l==='fr'); en.setAttribute('aria-pressed',l==='en');
-    try{localStorage.setItem('lang',l)}catch(e){}
+    /* image descriptions and labels: French in the HTML, English in data-en */
+    [].forEach.call(document.querySelectorAll('[data-en]'),function(e){var a=e.hasAttribute('alt')?'alt':'aria-label';if(!e.hasAttribute('data-fr'))e.setAttribute('data-fr',e.getAttribute(a)||'');e.setAttribute(a,e.getAttribute(l==='en'?'data-en':'data-fr'))});
+    if(save){try{localStorage.setItem('lang',l)}catch(e){}}
   }
-  var saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
-  set(saved==='en'?'en':'fr');
-  fr.onclick=function(){set('fr')}; en.onclick=function(){set('en')};
+  /* the starting language was picked before first paint (see the small script at the top of <body>) */
+  set(window.__lang==='en'?'en':'fr');
+  fr.onclick=function(){set('fr',true)}; en.onclick=function(){set('en',true)};
+
+  /* gear progress: counted from the status tags in the table, so the sentence and the bar never go stale */
+  (function(){var rows=document.querySelectorAll('#materiel tbody tr').length,ok=document.querySelectorAll('#materiel .pill.ok').length,part=document.querySelectorAll('#materiel .pill.part').length,bar=document.querySelector('.track i'),pf=document.querySelector('.progress .fr'),pe=document.querySelector('.progress .en');
+    if(!rows||!bar)return;bar.style.width=Math.round((ok+part*.5)/rows*100)+'%';
+    if(pf)pf.textContent=ok+' article'+(ok>1?'s':'')+' sur '+rows+' trouvé'+(ok>1?'s':'')+(part?', '+part+' en partie':'');
+    if(pe)pe.textContent=ok+' of '+rows+' items secured'+(part?', '+part+' partly':'');})();
 
   /* copy */
   var copy=document.getElementById('copy'), ok=document.getElementById('copied'), mail=document.getElementById('email');
@@ -1133,6 +1178,7 @@ html.no-intro .curtain{display:none}
         out=ctx.createImageData(W,H);}catch(e){buckets=null}
       ready=true;if(self.pending)self.play(self.pending.dur,self.pending.delay);
     };
+    img.onerror=function(){self.failed=true;if(self.onfail)self.onfail()};
     img.src=cv.getAttribute('data-sketch');
     this.full=function(){if(!ready)return;cancelAnimationFrame(raf);ctx.clearRect(0,0,W,H);ctx.drawImage(mask,0,0);ctx.globalCompositeOperation='source-in';ctx.fillStyle='rgb('+INK+')';ctx.fillRect(0,0,W,H);ctx.globalCompositeOperation='source-over'};
     this.play=function(dur,delay){
@@ -1155,10 +1201,13 @@ html.no-intro .curtain{display:none}
     function spreads(){var n=srcs.length,o=[];if(single()){for(var i=0;i<n;i++)o.push([i])}else{for(var j=0;j<n;j+=2)o.push([j,j+1<n?j+1:-1])}return o}
     function cv(i){return i<0?blank:srcs[i]}
     function mount(sp){[PL,PR].forEach(function(p,k){var c=cv(sp[k]===undefined?-1:sp[k]);if(p.firstChild!==c){while(p.firstChild)p.removeChild(p.firstChild);p.appendChild(c)}})}
-    function ui(){var sp=spreads();bcur=Math.min(bcur,sp.length-1);bkCount.textContent=(bcur+1)+' / '+sp.length;bkPrev.disabled=bcur===0;bkNext.disabled=bcur===sp.length-1;
-      book.classList.toggle('can-prev',bcur>0);book.classList.toggle('can-next',bcur<sp.length-1)}
+    var bkNav=document.querySelector('.book-nav'),hints=[].slice.call(document.querySelectorAll('.turn-hint'));
+    function ui(){var sp=spreads();bcur=Math.max(0,Math.min(bcur,sp.length-1));bkCount.textContent=(sp.length?bcur+1:0)+' / '+sp.length;bkPrev.disabled=bcur===0;bkNext.disabled=bcur>=sp.length-1;
+      book.classList.toggle('can-prev',bcur>0);book.classList.toggle('can-next',bcur<sp.length-1);
+      /* a single spread: nothing to turn, so no arrows, no counter and no "tap to turn" hint */
+      var solo=sp.length<2;book.classList.toggle('solo',solo);if(bkNav)bkNav.classList.toggle('solo',solo);hints.forEach(function(h){h.hidden=solo})}
     function play(i,delay){if(i<0)return;var s=sks[i];if(RM){s.ready?s.full():setTimeout(function(){s.full()},400);return}s.play(3800,delay||0)}
-    function drawCur(){var sp=spreads()[bcur];play(sp[0],0);if(sp.length>1)play(sp[1],1600)}
+    function drawCur(){var sp=spreads()[bcur];if(!sp)return;play(sp[0],0);if(sp.length>1)play(sp[1],1600)}
     function snap(c){var k=document.createElement('canvas');k.width=c.width;k.height=c.height;k.getContext('2d').drawImage(c,0,0);return k}
     function go(d){
       var sp=spreads(),to=bcur+d;if(busy||to<0||to>=sp.length)return;
@@ -1191,9 +1240,11 @@ html.no-intro .curtain{display:none}
     book.addEventListener('click',function(e){if(book._sw)e.stopImmediatePropagation()},true);
     book.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(1)}else if(e.key==='ArrowLeft'){e.preventDefault();go(-1)}});
     bkPrev.addEventListener('click',function(){go(-1)});bkNext.addEventListener('click',function(){go(1)});
-    (mq.addEventListener?mq.addEventListener('change',function(){bcur=0;mount(spreads()[0]);ui();drawCur()}):0);
-    mount(spreads()[0]);ui();
-    if('IntersectionObserver' in window){var bo=new IntersectionObserver(function(es){if(es[0].isIntersecting){drawCur();bo.disconnect()}},{threshold:.3});bo.observe(book)}else drawCur();
+    (mq.addEventListener?mq.addEventListener('change',function(){bcur=0;mount(spreads()[0]||[]);ui();drawCur()}):0);
+    /* a drawing whose file is missing is dropped from the book instead of showing as an empty page */
+    sks.forEach(function(s){s.onfail=function(){var k=sks.indexOf(s);if(k<0)return;sks.splice(k,1);var c=srcs.splice(k,1)[0];if(c&&c.parentNode)c.parentNode.removeChild(c);bcur=0;mount(spreads()[0]||[]);ui();if(started)drawCur()}});
+    mount(spreads()[0]||[]);ui();
+    if('IntersectionObserver' in window){var bo=new IntersectionObserver(function(es){if(es[0].isIntersecting){started=true;drawCur();bo.disconnect()}},{threshold:.3});bo.observe(book)}else{started=true;drawCur()}
     var rd=document.getElementById('redraw');if(rd)rd.addEventListener('click',drawCur);
   }
 

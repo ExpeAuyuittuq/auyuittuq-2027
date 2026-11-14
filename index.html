@@ -192,7 +192,7 @@ canvas{display:block;width:100%;height:100%}
 @media (max-width:520px){.values{grid-template-columns:1fr}}
 
 /* Antho */
-.antho{padding-top:0}
+.faq{padding-top:0}
 .antho-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:end;margin-top:44px}
 .antho-grid>*{min-width:0}
 .antho-grid figure{margin:0;position:relative;overflow:hidden}
@@ -275,7 +275,7 @@ canvas{display:block;width:100%;height:100%}
 @media (max-width:760px){.team{grid-template-columns:1fr}}
 
 .legs h3 .km{font:700 13px var(--mono);color:var(--mint);margin-left:8px;white-space:nowrap}
-.field{margin:48px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1.5px solid;border-image:repeating-linear-gradient(90deg,var(--ink) 0 7px,transparent 7px 17px) 1}
+.field{margin:48px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1.5px solid;border-image:repeating-linear-gradient(90deg,var(--ink) 0 7px,transparent 7px 17px) 1}
 .field div{padding:20px 20px 20px 0;border-bottom:1px solid;border-image:repeating-linear-gradient(90deg,var(--line) 0 7px,transparent 7px 17px) 1;min-width:0}
 .field dt{font:900 clamp(26px,2.6vw,36px)/1 var(--display);color:var(--mint);margin-bottom:8px;text-transform:uppercase}
 .field dd{margin:0;font-size:14px;color:var(--muted);max-width:34ch}
@@ -548,7 +548,7 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
   <div class="wrap">
     <nav aria-label="Sections">
       <a href="#projet"><span class="fr">Le projet</span><span class="en">The project</span></a>
-      <a href="#trace"><span class="fr">La trace</span><span class="en">The route</span></a>
+      <a href="#trace"><span class="fr">L'itinéraire</span><span class="en">The route</span></a>
       <a href="#equipe"><span class="fr">L'équipe</span><span class="en">Team</span></a>
       <a href="#materiel"><span class="fr">Matériel</span><span class="en">Gear</span></a>
     </nav>
@@ -561,7 +561,7 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
   </div>
   <div class="mnav" id="mnav" role="navigation" aria-label="Menu">
     <a href="#projet"><span class="fr">Le projet</span><span class="en">The project</span></a>
-    <a href="#trace"><span class="fr">La trace</span><span class="en">The route</span></a>
+    <a href="#trace"><span class="fr">L'itinéraire</span><span class="en">The route</span></a>
     <a href="#equipe"><span class="fr">L'équipe</span><span class="en">Team</span></a>
     <a href="#materiel"><span class="fr">Matériel recherché</span><span class="en">Gear needed</span></a>
     <a href="#partenaires"><span class="fr">Ce qu'on vous offre</span><span class="en">What you get</span></a>
@@ -579,9 +579,9 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
       </span>
       <span class="l2"><span class="syl" lang="iu">ᐊᐅᔪᐃᑦᑐᖅ</span><small><span class="fr">Auyuittuq, «&nbsp;la terre qui ne fond jamais&nbsp;»</span><span class="en">Auyuittuq, "the land that never melts"</span></small></span>
     </h1>
-    <p class="intro"><span class="fr">On est sept amis&nbsp;: quatre de Montréal, trois du Nunavut. En avril 2027, on traverse le col Akshayuk à ski, 100&nbsp;km du nord au sud, chacun avec sa pulka, en autonomie complète, par des températures qui descendent jusqu'à −40&nbsp;°C. On cherche des partenaires pour s'équiper.</span><span class="en">We're seven friends: four from Montréal, three from Nunavut. In April 2027 we're skiing Akshayuk Pass, 100&nbsp;km north to south, each hauling our own pulk, fully self-supported, in temperatures down to −40&nbsp;°C. We're looking for partners to help us gear up.</span></p>
+    <p class="intro"><span class="fr">On est sept amis, quatre à Montréal et trois au Nunavut. En avril 2027, on part traverser le col Akshayuk à ski, dans l'Arctique canadien. Cent kilomètres, chacun avec son traîneau, sans ravitaillement. Il nous manque encore une bonne partie du matériel, et c'est pour ça qu'on a fait ce site.</span><span class="en">We're seven friends, four in Montréal and three in Nunavut. In April 2027 we're setting out to ski across Akshayuk Pass, in the Canadian Arctic. A hundred kilometres, each of us pulling a sled, with no resupply. We're still missing a good part of the gear, which is why we made this site.</span></p>
     <div class="cta">
-      <a class="btn mint" href="#materiel"><span class="fr">Voir nos besoins</span><span class="en">See what we need</span></a>
+      <a class="btn mint" href="#materiel"><span class="fr">Voir la liste de matériel</span><span class="en">See the gear list</span></a>
       <a class="btn ghost" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a>
     </div>
   </div>
@@ -597,10 +597,11 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
 <section id="projet" data-snow class="after-collage">
   <canvas class="chladni" id="chladni2" aria-hidden="true"></canvas>
   <div class="wrap split">
-    <h2 class="big"><span class="fr">Traverser <span class="accent">le col Akshayuk</span></span><span class="en">Crossing <span class="accent">Akshayuk Pass</span></span></h2>
+    <h2 class="big"><span class="fr">C'est où, <span class="accent">le col Akshayuk&nbsp;?</span></span><span class="en">Where is <span class="accent">Akshayuk Pass?</span></span></h2>
     <div class="copy">
-      <p class="lede"><span class="fr">On passe notre temps dehors&nbsp;: ultra-trail, ski, gravel, escalade. Cette fois, on part plus loin&nbsp;: le parc national Auyuittuq, sur l'île de Baffin, qu'on traverse du nord au sud en passant le cercle arctique.</span><span class="en">We spend our time outdoors: ultra-trail running, skiing, gravel riding, climbing. This time we're going further: Auyuittuq National Park, on Baffin Island, which we'll cross north to south, over the Arctic Circle.</span></p>
-      <p><span class="fr">Une pulka, c'est un traîneau qu'on tire à ski, attaché à la taille. Tente, nourriture, combustible, sacs de couchage&nbsp;: tout est dedans. Pendant toute la traversée, on est notre propre camp de base.</span><span class="en">A pulk is a sled you haul behind you on skis, clipped to a waist harness. Tent, food, fuel, sleeping bags: it's all in there. For the whole crossing, we are our own base camp.</span></p>
+      <p class="lede"><span class="fr">Sur l'île de Baffin, au Nunavut, dans le parc national Auyuittuq. C'est une longue vallée entre deux fjords, avec un village inuit à chaque bout, Qikiqtarjuaq au nord et Pangnirtung au sud. On la traverse du nord au sud, et on passe le cercle arctique en chemin.</span><span class="en">On Baffin Island, in Nunavut, inside Auyuittuq National Park. It's a long valley between two fjords, with an Inuit village at each end, Qikiqtarjuaq to the north and Pangnirtung to the south. We're crossing it north to south, and we cross the Arctic Circle on the way.</span></p>
+      <p><span class="fr">On avance à ski en tirant chacun une pulka, un traîneau d'environ 40&nbsp;kg attaché à la taille. Il n'y a aucun ravitaillement en route, alors tout ce dont on a besoin est dedans.</span><span class="en">We travel on skis, each of us pulling a pulk, a sled of about 40&nbsp;kg clipped to a waist harness. There's no resupply along the way, so everything we need is in there.</span></p>
+      <p><span class="fr">Auyuittuq est en territoire inuit. On y passe en suivant les règles du parc et les conseils des gens de la région, et on ne laisse rien derrière nous.</span><span class="en">Auyuittuq is Inuit land. We travel through it by the park's rules and on the advice of the people who live there, and we leave nothing behind.</span></p>
       <p class="spec"><span><span class="fr"><span class="hw" role="img" aria-label="7 skieurs" style="--src:url(skieurs.png);aspect-ratio:488/120"></span></span><span class="en"><b>7</b> skiers</span></span><span><span class="fr"><span class="hw" role="img" aria-label="100&nbsp;km à ski" style="--src:url(km.png);aspect-ratio:594/120"></span></span><span class="en"><b>100&nbsp;km</b> on skis</span></span><span><span class="fr"><span class="hw" role="img" aria-label="8 jours" style="--src:url(jours.png);aspect-ratio:276/120"></span></span><span class="en"><b>8</b> days</span></span><span><span class="fr"><span class="hw" role="img" aria-label="−30 à −40&nbsp;°C" style="--src:url(temp.png);aspect-ratio:502/120"></span></span><span class="en"><b>−30 to −40&nbsp;°C</b> at night</span></span><span><span class="fr"><span class="hw" role="img" aria-label="40&nbsp;kg par pulka" style="--src:url(kg.png);aspect-ratio:597/120"></span></span><span class="en"><b>40&nbsp;kg</b> per pulk</span></span><span><span class="fr"><span class="hw" role="img" aria-label="Cercle arctique" style="--src:url(cercle.png);aspect-ratio:452/120"></span></span><span class="en">Arctic Circle</span></span></p>
     </div>
   </div>
@@ -611,30 +612,19 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
 <section class="mission">
   <img src="aurora.jpg" alt="Aurore boréale verte au-dessus des sommets du col Akshayuk" data-en="Green northern lights above the peaks of Akshayuk Pass" loading="lazy" decoding="async">
   <div class="wrap">
-    <span class="dot"><span class="fr">Notre mission</span><span class="en">Our mission</span></span>
-    <p class="say" data-words><span class="fr">Traverser ensemble ce territoire inuit, et partager cette histoire à Montréal comme à Iqaluit.</span><span class="en">Cross this Inuit land together, and share the story in Montréal and Iqaluit alike.</span></p>
+    <span class="dot"><span class="fr">L'idée</span><span class="en">The idea</span></span>
+    <p class="say" data-words><span class="fr">Traverser le col à sept, puis raconter le voyage à Montréal comme à Iqaluit.</span><span class="en">Cross the pass, all seven of us, then tell the story in Montréal and in Iqaluit.</span></p>
     <span class="credit"><span class="fr">Photo&nbsp;: Antho</span><span class="en">Photo: Antho</span></span>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2><span class="fr">Notre façon d'avancer</span><span class="en">How we travel</span></h2>
-    <div class="values">
-      <div class="value"><div class="tile" style="background:var(--paper2)"><img src="illus-02.svg" alt="" loading="eager"></div><h3><span class="fr">Respecter la terre inuit</span><span class="en">Respect Inuit land</span></h3><p><span class="fr">Auyuittuq est en terre inuit. On y passe sans laisser de trace, en suivant les règles du parc et les conseils des gens de la région.</span><span class="en">Auyuittuq is Inuit land. We pass through without leaving a trace, following the park's rules and the advice of the people who live there.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-05.svg" alt="" loading="eager"></div><h3><span class="fr">Apprendre les uns des autres</span><span class="en">Learn from each other</span></h3><p><span class="fr">Un chasseur du Nunavut, un pharmacien, un moniteur de ski, des coureurs d'ultra. Chacun apprend aux autres ce qu'il sait faire.</span><span class="en">A hunter from Nunavut, a pharmacist, a ski instructor, ultrarunners. Each of us teaches the others what we know.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--mint)"><img src="illus-01.svg" alt="" loading="eager"></div><h3><span class="fr">Tout dans la pulka</span><span class="en">All in the pulk</span></h3><p><span class="fr">Aucun ravitaillement en route. Ce qu'on tire, c'est tout ce qu'on a&nbsp;: environ 40&nbsp;kg chacun.</span><span class="en">No resupply along the way. What we haul is all we have: about 40&nbsp;kg each.</span></p></div>
-      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-04.svg" alt="" loading="eager"></div><h3><span class="fr">Partir préparés</span><span class="en">Go prepared</span></h3><p><span class="fr">Premiers soins, suivi satellite, plan d'évacuation&nbsp;: tout est prêt avant de partir. Une fois là-bas, on est là pour avoir du fun.</span><span class="en">First aid, satellite tracking, an evacuation plan: all sorted before we leave. Once we're out there, we're in it for the fun.</span></p></div>
-    </div>
   </div>
 </section>
 
 <section class="antho" id="terrain">
   <div class="wrap">
     <div class="split">
-      <h2><span class="fr">Antho a déjà fait une partie de la trace</span><span class="en">Antho has already done part of the route</span></h2>
+      <h2><span class="fr">Antho y est déjà allé</span><span class="en">Antho has already been there</span></h2>
       <div class="copy">
-        <p class="lede"><span class="fr">Cinq jours seul avec sa pulka, de Pangnirtung à Summit Lake et retour. Il en a rapporté des repères, des leçons sur le matériel et ces images. On y retourne, à sept cette fois.</span><span class="en">Five days alone with his pulk, from Pangnirtung up to Summit Lake and back. He came home knowing the terrain, with lessons about gear and these photos. We're going back, seven of us this time.</span></p>
+        <p class="lede"><span class="fr">Il est parti seul avec sa pulka, cinq jours, de Pangnirtung à Summit Lake et retour. Il a campé au pied du mont Thor et regardé les aurores par −35&nbsp;°C.</span><span class="en">He went alone with his pulk for five days, from Pangnirtung up to Summit Lake and back. He camped below Mount Thor and watched the northern lights at −35&nbsp;°C.</span></p>
+        <p><span class="fr">Il a aussi cassé sa pelle et regonflé son matelas toutes les deux heures, ce qui nous a servi de leçon pour le matériel. Cette fois, on y retourne à sept, pour la traversée complète.</span><span class="en">He also broke his shovel and re-inflated his sleeping pad every two hours, which taught us a thing or two about gear. This time we're going back as seven, for the full crossing.</span></p>
         <p><a class="btn mint" href="https://routesaemporter.com/AUYUITTUQ" target="_blank" rel="noopener"><span class="fr">Lire le récit d'Antho</span><span class="en">Read Antho's story (in French)</span> →</a></p>
         
       </div>
@@ -673,56 +663,11 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
   </div>
 </section>
 
-<section class="poisson" id="entrainement">
-  <div class="wrap">
-    <div class="split">
-      <h2><span class="fr">On s'entraîne déjà sur la neige</span><span class="en">Already training on snow</span></h2>
-      <div class="copy">
-        <p class="lede"><span class="fr">Avant le Nunavut, on se prépare sur les lacs gelés du Québec. Ici, une sortie à ski et pulka au réservoir du Poisson Blanc&nbsp;: camp sur la glace, nuits froides, et du matériel testé pour de vrai.</span><span class="en">Before Nunavut, we train on Québec's frozen lakes. Here, a ski-and-pulk trip on the Poisson Blanc reservoir: camping on the ice, cold nights, and gear tested for real.</span></p>
-        <p><span class="fr">Photos de Doriane, au Poisson Blanc.</span><span class="en">Photos by Doriane, at Poisson Blanc.</span></p>
-      </div>
-    </div>
-    <div class="pgrid">
-      <figure class="pg1"><img src="poisson-tent.jpg" alt="Au camp sur le lac gelé, un équipier monte sa tente au milieu des skis et des pulkas" data-en="At camp on the frozen lake, a teammate pitches a tent among the skis and pulks" style="object-position:50% 72%" loading="lazy" decoding="async"></figure>
-      <figure class="pg2"><img src="poisson-pov.jpg" alt="Vue depuis la pulka&nbsp;: la trace file sur le lac gelé vers les autres skieurs" data-en="View from the pulk: the track runs across the frozen lake towards the other skiers" style="object-position:50% 60%" loading="lazy" decoding="async"></figure>
-      <figure class="pg3"><img src="poisson-camp.jpg" alt="Deux tentes sur un lac enneigé au lever du jour" data-en="Two tents on a snow-covered lake at daybreak" style="object-position:50% 80%" loading="lazy" decoding="async"></figure>
-      <figure class="pg4"><img src="poisson-trail.jpg" alt="Une skieuse tire sa pulka dans la brume du matin" data-en="A skier hauls her pulk through the morning mist" loading="lazy" decoding="async"></figure>
-    </div>
-  </div>
-</section>
-
-<section class="timeline dark">
-  <div class="wrap">
-    <div class="tabs" role="tablist" aria-label="Étapes" data-en="Timeline">
-      <button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="fr">Automne 2026</span><span class="en">Fall 2026</span></button>
-      <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="fr">Hiver 2027</span><span class="en">Winter 2027</span></button>
-      <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="fr">Avril 2027</span><span class="en">April 2027</span></button>
-      <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="fr">Mai 2027</span><span class="en">May 2027</span></button>
-    </div>
-    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-      <div class="txt"><span class="dot now"><span class="fr">En ce moment</span><span class="en">Right now</span></span><h2><span class="fr">On s'équipe et on cherche nos partenaires.</span><span class="en">Gearing up and finding our partners.</span></h2><p><span class="fr">Planification à sept, entre Montréal et Iqaluit&nbsp;: itinéraire, liste de matériel, dossier de commandite. C'est maintenant que votre aide compte.</span><span class="en">Planning as a team of seven, between Montréal and Iqaluit: route, gear list, sponsorship package. Now is when your help matters most.</span></p></div>
-      <div class="tile" style="background:var(--mint)"><canvas data-art="flatlay" data-ink="#351A11" data-seed="23" aria-hidden="true"></canvas></div>
-    </div>
-    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-      <div class="txt"><h2><span class="fr">Entraînement à Montréal et à Iqaluit.</span><span class="en">Training in Montréal and Iqaluit.</span></h2><p><span class="fr">Sorties en pulka par grand froid, et chaque pièce de matériel testée avant le départ.</span><span class="en">Pulk outings in deep cold, and every piece of gear tested before we leave.</span></p></div>
-      <div class="tile" style="background:var(--bark2)"><canvas data-art="tent" data-ink="#C9F2AE" data-seed="17" aria-hidden="true"></canvas></div>
-    </div>
-    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <div class="txt"><h2><span class="fr">La traversée.</span><span class="en">The crossing.</span></h2><p><span class="fr">Huit jours, dont cinq à ski&nbsp;: 100&nbsp;km de Qikiqtarjuaq à Pangnirtung par le col Akshayuk, avec suivi GPS en direct sur ce site.</span><span class="en">Eight days, five of them on skis: 100&nbsp;km from Qikiqtarjuaq to Pangnirtung through Akshayuk Pass, with live GPS tracking on this site.</span></p></div>
-      <div class="tile" style="background:var(--paper)"><canvas data-art="tracks" data-ink="#4B3027" data-seed="41" aria-hidden="true"></canvas></div>
-    </div>
-    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
-      <div class="txt"><h2><span class="fr">Le film et sa première.</span><span class="en">The film and its premiere.</span></h2><p><span class="fr">Montage du film, projection privée à Montréal avec questions-réponses et quelques bières, puis envoi aux festivals de films de montagne et d'aventure.</span><span class="en">We edit the film, hold a private screening in Montréal with a Q&amp;A and a few beers, then submit it to mountain and adventure film festivals.</span></p></div>
-      <div class="tile" style="background:var(--paper2)"><canvas data-art="aurora" data-ink="#4B3027" data-seed="13" aria-hidden="true"></canvas></div>
-    </div>
-  </div>
-</section>
-
 <section id="trace">
   <div class="wrap">
     <div class="split">
       <h2>Qikiqtarjuaq → Pangnirtung</h2>
-      <p class="lede"><span class="fr">Du nord au sud par le col Akshayuk, dans le parc national Auyuittuq. Une motoneige nous dépose à l'entrée du parc, puis 100&nbsp;km à ski en tirant les pulkas, jusqu'à Overlord. Une autre motoneige nous ramène à Pangnirtung.</span><span class="en">North to south through Akshayuk Pass, in Auyuittuq National Park. A snowmobile drops us at the park entrance, then it's 100&nbsp;km on skis, hauling the pulks, to Overlord. Another snowmobile takes us on to Pangnirtung.</span></p>
+      <p class="lede"><span class="fr">On part d'Iqaluit en avion. À Qikiqtarjuaq, une motoneige nous dépose à l'entrée du parc. De là, il y a 100&nbsp;km à ski jusqu'à Overlord, en cinq étapes, puis une autre motoneige nous ramène à Pangnirtung.</span><span class="en">We fly out of Iqaluit. At Qikiqtarjuaq, a snowmobile drops us at the park entrance. From there it's 100&nbsp;km on skis to Overlord, in five stages, then another snowmobile takes us to Pangnirtung.</span></p>
     </div>
     <div class="route-grid">
       <div>
@@ -749,13 +694,13 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
         <div class="legend"><span><i></i><span class="fr">Trace à ski</span><span class="en">Ski route</span></span><span><i class="s"></i><span class="fr">Transfert en motoneige</span><span class="en">Snowmobile transfer</span></span><span><i class="c"></i><span class="fr">Camp / village</span><span class="en">Camp / village</span></span><span><i class="w"></i><span class="fr">Eau / glace de mer</span><span class="en">Water / sea ice</span></span></div>
       </div>
       <ol class="legs">
-        <li><div class="d"><span class="fr">Jour 1</span><span class="en">Day 1</span></div><div><h3><span class="fr">Iqaluit → Qikiqtarjuaq</span><span class="en">Iqaluit → Qikiqtarjuaq</span></h3><p><span class="fr">Vol vers Qikiqtarjuaq, préparation des pulkas, puis transfert en motoneige jusqu'à l'entrée du parc.</span><span class="en">We fly to Qikiqtarjuaq, pack the pulks, then take a snowmobile to the park entrance.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 2</span><span class="en">Day 2</span></div><div><h3>North Pangnirtung → June Valley <span class="km">27&nbsp;km</span></h3><p><span class="fr">La plus longue journée, sur la glace du fjord.</span><span class="en">The longest day, on the fjord ice.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 1</span><span class="en">Day 1</span></div><div><h3><span class="fr">Iqaluit → Qikiqtarjuaq</span><span class="en">Iqaluit → Qikiqtarjuaq</span></h3><p><span class="fr">On atterrit à Qikiqtarjuaq, on charge les pulkas, et une motoneige nous emmène à l'entrée du parc.</span><span class="en">We land in Qikiqtarjuaq, load the pulks, and a snowmobile takes us to the park entrance.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 2</span><span class="en">Day 2</span></div><div><h3>North Pangnirtung → June Valley <span class="km">27&nbsp;km</span></h3><p><span class="fr">La plus longue étape, sur la glace du fjord.</span><span class="en">The longest stage, on the fjord ice.</span></p></div></li>
         <li><div class="d"><span class="fr">Jour 3</span><span class="en">Day 3</span></div><div><h3>June Valley → Glacier Lake <span class="km"><span class="fr">16,5&nbsp;km</span><span class="en">16.5&nbsp;km</span></span></h3><p><span class="fr">On remonte la vallée vers les glaciers.</span><span class="en">Up the valley towards the glaciers.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 4</span><span class="en">Day 4</span></div><div><h3>Glacier Lake → Summit Lake <span class="km"><span class="fr">20,5&nbsp;km</span><span class="en">20.5&nbsp;km</span></span></h3><p><span class="fr">On atteint le point haut du col, l'endroit le plus exposé au vent.</span><span class="en">We reach the high point of the pass, the spot most exposed to wind.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 5</span><span class="en">Day 5</span></div><div><h3>Summit Lake → Windy Lake <span class="km">20&nbsp;km</span></h3><p><span class="fr">On redescend vers le sud entre les parois de granit, en passant sous le mont Thor.</span><span class="en">We head down the south side between granite walls, passing under Mount Thor.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 6</span><span class="en">Day 6</span></div><div><h3>Windy Lake → Overlord <span class="km">16&nbsp;km</span></h3><p><span class="fr">On passe le cercle arctique. Cette partie se fait souvent sur la glace vive, en crampons. Puis transfert en motoneige jusqu'à Pangnirtung.</span><span class="en">We cross the Arctic Circle. This stretch is often bare ice, done in crampons. Then a snowmobile transfer to Pangnirtung.</span></p></div></li>
-        <li><div class="d"><span class="fr">Jour 7</span><span class="en">Day 7</span></div><div><h3><span class="fr">Jour de réserve</span><span class="en">Buffer day</span></h3><p><span class="fr">Un jour tampon, à utiliser n'importe quand pendant la traversée si la météo nous bloque.</span><span class="en">A buffer day, to use at any point during the crossing if the weather holds us up.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 4</span><span class="en">Day 4</span></div><div><h3>Glacier Lake → Summit Lake <span class="km"><span class="fr">20,5&nbsp;km</span><span class="en">20.5&nbsp;km</span></span></h3><p><span class="fr">Le point le plus haut du col, et le plus exposé au vent.</span><span class="en">The highest point of the pass, and the most exposed to wind.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 5</span><span class="en">Day 5</span></div><div><h3>Summit Lake → Windy Lake <span class="km">20&nbsp;km</span></h3><p><span class="fr">On redescend côté sud et on passe sous le mont Thor, la plus haute paroi verticale du monde.</span><span class="en">Down the south side, passing under Mount Thor, the tallest vertical rock face in the world.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 6</span><span class="en">Day 6</span></div><div><h3>Windy Lake → Overlord <span class="km">16&nbsp;km</span></h3><p><span class="fr">On passe le cercle arctique. Le sol est souvent en glace vive, alors on range les skis et on finit en crampons. À Overlord, une motoneige nous ramène à Pangnirtung.</span><span class="en">We cross the Arctic Circle. The ground is often bare ice, so the skis come off and we finish in crampons. At Overlord, a snowmobile takes us back to Pangnirtung.</span></p></div></li>
+        <li><div class="d"><span class="fr">Jour 7</span><span class="en">Day 7</span></div><div><h3><span class="fr">Jour de réserve</span><span class="en">Buffer day</span></h3><p><span class="fr">Un jour d'avance, à utiliser n'importe où en route si la météo nous bloque.</span><span class="en">A spare day, to use anywhere along the way if the weather pins us down.</span></p></div></li>
         <li><div class="d"><span class="fr">Jour 8</span><span class="en">Day 8</span></div><div><h3><span class="fr">Pangnirtung → Iqaluit</span><span class="en">Pangnirtung → Iqaluit</span></h3><p><span class="fr">Vol retour.</span><span class="en">Flight back.</span></p></div></li>
         </ol>
     </div>
@@ -763,18 +708,28 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
       <div><dt>15&nbsp;h</dt><dd><span class="fr">de jour en avril</span><span class="en">of daylight in April</span></dd></div>
       <div><dt>−20 / −30&nbsp;°C</dt><dd><span class="fr">le jour, −30 à −40&nbsp;°C la nuit</span><span class="en">by day, −30 to −40&nbsp;°C at night</span></dd></div>
       <div><dt><span class="fr">5&nbsp;000–6&nbsp;000</span><span class="en">5000–6000</span></dt><dd><span class="fr">kcal par jour et par personne</span><span class="en">kcal per day per person</span></dd></div>
-      <div><dt><span class="fr">0,3–0,4&nbsp;L</span><span class="en">0.3–0.4&nbsp;L</span></dt><dd><span class="fr">de naphta par personne et par jour&nbsp;: toute l'eau vient de la neige fondue</span><span class="en">of white gas per person per day: all our water is melted snow</span></dd></div>
-      <div><dt><span class="fr">Refuges</span><span class="en">Shelters</span></dt><dd><span class="fr">Des abris d'urgence jalonnent le col. On campe à côté, au cas où le blizzard se lève.</span><span class="en">Emergency shelters are spaced along the pass. We camp beside them in case a blizzard blows in.</span></dd></div>
-      <div><dt><span class="fr">Ours polaires</span><span class="en">Polar bears</span></dt><dd><span class="fr">Possibles dans la section nord. Laurent, chasseur du Nunavut, assure la surveillance.</span><span class="en">Possible in the northern section. Laurent, a hunter from Nunavut, keeps watch.</span></dd></div>
+      <div><dt><span class="fr">0,3–0,4&nbsp;L</span><span class="en">0.3–0.4&nbsp;L</span></dt><dd><span class="fr">de naphta par personne et par jour, parce que toute notre eau est de la neige fondue</span><span class="en">of white gas per person per day, because all our water is melted snow</span></dd></div>
     </dl>
+  </div>
+</section>
+
+<section id="questions" class="faq">
+  <div class="wrap">
+    <h2><span class="fr">Les questions qu'on nous pose</span><span class="en">Questions we get asked</span></h2>
+    <div class="values">
+      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-04.svg" alt="" loading="eager"></div><h3><span class="fr">Vous dormez où&nbsp;?</span><span class="en">Where do you sleep?</span></h3><p><span class="fr">Sous la tente. Des refuges d'urgence jalonnent le col, et on monte le camp juste à côté, au cas où le blizzard se lève.</span><span class="en">In tents. There are emergency shelters along the pass, and we pitch camp right beside them in case a blizzard blows in.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--mint)"><img src="illus-01.svg" alt="" loading="eager"></div><h3><span class="fr">Vous emportez quoi&nbsp;?</span><span class="en">What do you bring?</span></h3><p><span class="fr">Les tentes, des sacs de couchage prévus pour −40&nbsp;°C, les réchauds, le combustible, et environ 1&nbsp;kg de nourriture sèche par personne et par jour.</span><span class="en">Tents, sleeping bags rated to −40&nbsp;°C, stoves, fuel, and about 1&nbsp;kg of dry food per person per day.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--paper2)"><img src="illus-02.svg" alt="" loading="eager"></div><h3><span class="fr">Et les ours polaires&nbsp;?</span><span class="en">What about polar bears?</span></h3><p><span class="fr">Il peut y en avoir dans la partie nord. Laurent chasse au Nunavut, et c'est lui qui assure la surveillance.</span><span class="en">There may be some in the northern section. Laurent hunts in Nunavut, and he's the one keeping watch.</span></p></div>
+      <div class="value"><div class="tile" style="background:var(--bark2)"><img src="illus-05.svg" alt="" loading="eager"></div><h3><span class="fr">Et s'il y a un problème&nbsp;?</span><span class="en">What if something goes wrong?</span></h3><p><span class="fr">On a des balises et un téléphone satellite, une trousse de premiers soins et un pharmacien, Tim. Le plan d'évacuation sera bouclé avant le départ.</span><span class="en">We carry satellite beacons and a satellite phone, a first-aid kit and a pharmacist, Tim. The evacuation plan will be settled before we leave.</span></p></div>
+    </div>
   </div>
 </section>
 
 <section id="equipe" class="team-sec">
   <div class="wrap">
     <div class="split">
-      <h2><span class="fr">4 + 3 = sept pulkas</span><span class="en">4 + 3 = seven pulks</span></h2>
-      <p class="lede"><span class="fr">Chacun a son rôle, plus ou moins officiel, et sa pulka à tirer.</span><span class="en">Everyone has a job, more or less official, and a pulk to haul.</span></p>
+      <h2><span class="fr">L'équipe</span><span class="en">The team</span></h2>
+      <p class="lede"><span class="fr">On passe le plus clair de notre temps dehors, à courir, skier, rouler ou grimper. Pour la traversée, chacun a son rôle, plus ou moins officiel.</span><span class="en">We spend most of our time outside, running, skiing, riding or climbing. For the crossing, everyone has a job, more or less official.</span></p>
     </div>
     <div class="crew">
       <h3 class="city">Montréal <small>45°30′N</small></h3>
@@ -793,11 +748,56 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
   </div>
 </section>
 
+<section class="poisson" id="entrainement">
+  <div class="wrap">
+    <div class="split">
+      <h2><span class="fr">La préparation</span><span class="en">Getting ready</span></h2>
+      <div class="copy">
+        <p class="lede"><span class="fr">On s'entraîne sur les lacs gelés du Québec. Sur ces photos, on est au réservoir du Poisson Blanc, avec skis et pulkas, pour camper sur la glace et essayer le matériel au froid.</span><span class="en">We train on Québec's frozen lakes. In these photos we're at the Poisson Blanc reservoir with skis and pulks, camping on the ice and trying out the gear in the cold.</span></p>
+        <p><span class="fr">Photos&nbsp;: Doriane.</span><span class="en">Photos: Doriane.</span></p>
+      </div>
+    </div>
+    <div class="pgrid">
+      <figure class="pg1"><img src="poisson-tent.jpg" alt="Au camp sur le lac gelé, un équipier monte sa tente au milieu des skis et des pulkas" data-en="At camp on the frozen lake, a teammate pitches a tent among the skis and pulks" style="object-position:50% 72%" loading="lazy" decoding="async"></figure>
+      <figure class="pg2"><img src="poisson-pov.jpg" alt="Vue depuis la pulka&nbsp;: la trace file sur le lac gelé vers les autres skieurs" data-en="View from the pulk: the track runs across the frozen lake towards the other skiers" style="object-position:50% 60%" loading="lazy" decoding="async"></figure>
+      <figure class="pg3"><img src="poisson-camp.jpg" alt="Deux tentes sur un lac enneigé au lever du jour" data-en="Two tents on a snow-covered lake at daybreak" style="object-position:50% 80%" loading="lazy" decoding="async"></figure>
+      <figure class="pg4"><img src="poisson-trail.jpg" alt="Une skieuse tire sa pulka dans la brume du matin" data-en="A skier hauls her pulk through the morning mist" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="timeline dark">
+  <div class="wrap">
+    <div class="tabs" role="tablist" aria-label="Étapes" data-en="Timeline">
+      <button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="fr">Automne 2026</span><span class="en">Fall 2026</span></button>
+      <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="fr">Hiver 2027</span><span class="en">Winter 2027</span></button>
+      <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="fr">Avril 2027</span><span class="en">April 2027</span></button>
+      <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="fr">Mai 2027</span><span class="en">May 2027</span></button>
+    </div>
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+      <div class="txt"><span class="dot now"><span class="fr">En ce moment</span><span class="en">Right now</span></span><h2><span class="fr">On cherche le matériel.</span><span class="en">We're looking for gear.</span></h2><p><span class="fr">On planifie à distance, entre Montréal et Iqaluit&nbsp;: l'itinéraire, la liste de matériel, le dossier de commandite. Si vous voulez nous aider, c'est le bon moment.</span><span class="en">We're planning remotely, between Montréal and Iqaluit: the route, the gear list, the sponsorship package. If you'd like to help, now is a good time.</span></p></div>
+      <div class="tile" style="background:var(--mint)"><canvas data-art="flatlay" data-ink="#351A11" data-seed="23" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <div class="txt"><h2><span class="fr">Entraînement à Montréal et à Iqaluit.</span><span class="en">Training in Montréal and Iqaluit.</span></h2><p><span class="fr">Des sorties en pulka par grand froid, pour essayer tout le matériel avant de partir.</span><span class="en">Pulk outings in deep cold, to try out all the gear before we leave.</span></p></div>
+      <div class="tile" style="background:var(--bark2)"><canvas data-art="tent" data-ink="#C9F2AE" data-seed="17" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <div class="txt"><h2><span class="fr">La traversée.</span><span class="en">The crossing.</span></h2><p><span class="fr">Huit jours de voyage, dont cinq à ski. Vous pourrez suivre notre position GPS en direct sur ce site.</span><span class="en">Eight days of travel, five of them on skis. You'll be able to follow our GPS position live on this site.</span></p></div>
+      <div class="tile" style="background:var(--paper)"><canvas data-art="tracks" data-ink="#4B3027" data-seed="41" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+      <div class="txt"><h2><span class="fr">Le film.</span><span class="en">The film.</span></h2><p><span class="fr">On monte le film, puis on le projette à Montréal lors d'une soirée privée, avec une période de questions et quelques bières. Ensuite, on l'envoie aux festivals de films de montagne et d'aventure.</span><span class="en">We edit the film, then screen it in Montréal at a private evening, with a Q&amp;A and a few beers. After that, we send it to mountain and adventure film festivals.</span></p></div>
+      <div class="tile" style="background:var(--paper2)"><canvas data-art="aurora" data-ink="#4B3027" data-seed="13" aria-hidden="true"></canvas></div>
+    </div>
+  </div>
+</section>
+
 <section id="materiel">
   <div class="wrap">
     <div class="split">
-      <h2><span class="fr">Le matériel qu'il nous faut</span><span class="en">The gear we need</span></h2>
-      <p class="lede"><span class="fr">Voici la liste complète, avec ce qu'on a déjà et ce qu'on cherche encore. Un prêt, un don ou un rabais&nbsp;: tout nous aide.</span><span class="en">Here's the full list, with what we already have and what we're still looking for. A loan, a donation or a discount: it all helps.</span></p>
+      <h2><span class="fr">Le matériel qu'on cherche</span><span class="en">The gear we're looking for</span></h2>
+      <p class="lede"><span class="fr">Voici la liste complète, avec ce qu'on a déjà et ce qu'il nous manque. Un prêt nous aide autant qu'un don ou un rabais.</span><span class="en">Here's the full list, with what we already have and what we're missing. A loan helps us as much as a donation or a discount.</span></p>
     </div>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ink" x="-10%" y="-20%" width="120%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" result="d"/><feGaussianBlur in="d" stdDeviation=".25"/></filter><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter></svg>
     <div class="tablebox">
@@ -827,30 +827,30 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
   <div class="wrap">
     <div class="split">
       <h2><span class="fr">Ce qu'on vous offre en échange</span><span class="en">What you get in return</span></h2>
-      <p class="lede"><span class="fr">Votre matériel sera filmé et photographié en conditions réelles&nbsp;: jusqu'à −40&nbsp;°C, dans le col Akshayuk. Ces images sont à vous.</span><span class="en">Your gear gets filmed and photographed in real conditions: down to −40&nbsp;°C, in Akshayuk Pass. The footage is yours to use.</span></p>
+      <p class="lede"><span class="fr">On filme et on photographie votre matériel là où il sert vraiment, pendant la traversée. Les images sont à vous, et on vous dit franchement comment il a tenu.</span><span class="en">We film and photograph your gear where it's actually used, during the crossing. The images are yours, and we tell you honestly how it held up.</span></p>
     </div>
     <ol class="offer">
-      <li><figure><img src="pulka-blocs.jpg" alt="Un équipier tire sa pulka entre les blocs enneigés, sous les parois du col" data-en="A skier hauls a pulk between snow-covered boulders, under the walls of the pass" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant</span><span class="en">During</span></span><h3><span class="fr">Un vrai test terrain</span><span class="en">A real field test</span></h3><p><span class="fr">100&nbsp;km à tirer les pulkas, jusqu'à −40&nbsp;°C, avec 7 testeurs. Un rapport écrit pour chaque produit&nbsp;: ce qui a tenu, ce qui a cassé, ce qu'on changerait.</span><span class="en">100&nbsp;km hauling pulks, down to −40&nbsp;°C, with 7 testers. A written report on each product: what held up, what broke, what we'd change.</span></p></li>
-      <li><figure><img src="header-ski.jpg" alt="Un skieur en crampons tire sa pulka sur la glace bleue entre les parois de granit" data-en="A skier in crampons hauls a pulk over blue ice between granite walls" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant et après</span><span class="en">During and after</span></span><h3><span class="fr">Photos et vidéos pour votre marketing</span><span class="en">Photos and videos for your marketing</span></h3><p><span class="fr">Photos haute résolution et rushs vidéo, libres d'utilisation sur vos réseaux sociaux, votre site et vos campagnes.</span><span class="en">High-resolution photos and raw footage, free to use on your social media, website and campaigns.</span></p></li>
-      <li><figure><img src="vallee-film.jpg" alt="Vallée gelée et sommets de granit du col Akshayuk, sur pellicule" data-en="Frozen valley and granite peaks of Akshayuk Pass, shot on film" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Au retour, à Montréal</span><span class="en">Back in Montréal</span></span><h3><span class="fr">Le film, projeté à Montréal</span><span class="en">The film, screened in Montréal</span></h3><p><span class="fr">Une projection privée pour la communauté plein air de Montréal, avec questions-réponses et quelques bières. Votre marque au générique et à l'écran, en action.</span><span class="en">A private screening for Montréal's outdoor community, with a Q&amp;A and a few beers. Your brand in the credits and on screen, in action.</span></p></li>
-      <li><figure><img src="fjord-glace.jpg" alt="Glace de mer chaotique dans le fjord, entre deux falaises enneigées" data-en="Jumbled sea ice in the fjord, between two snow-covered cliffs" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Ensuite</span><span class="en">Then</span></span><h3><span class="fr">Le film en festivals</span><span class="en">The film at festivals</span></h3><p><span class="fr">On le soumet aux festivals de films de montagne et d'aventure, au Québec, au Canada et à l'international.</span><span class="en">We submit it to mountain and adventure film festivals in Québec, across Canada and abroad.</span></p></li>
+      <li><figure><img src="pulka-blocs.jpg" alt="Un équipier tire sa pulka entre les blocs enneigés, sous les parois du col" data-en="A skier hauls a pulk between snow-covered boulders, under the walls of the pass" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant</span><span class="en">During</span></span><h3><span class="fr">Un test par grand froid</span><span class="en">A deep-cold test</span></h3><p><span class="fr">Votre produit fait les 100&nbsp;km avec nous, par −30&nbsp;°C. Au retour, on vous envoie un compte rendu écrit&nbsp;: ce qui a tenu, ce qui a cassé, ce qu'on changerait.</span><span class="en">Your product does the 100&nbsp;km with us, at −30&nbsp;°C. When we're back, we send you a written report: what held up, what broke, what we'd change.</span></p></li>
+      <li><figure><img src="header-ski.jpg" alt="Un skieur en crampons tire sa pulka sur la glace bleue entre les parois de granit" data-en="A skier in crampons hauls a pulk over blue ice between granite walls" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Pendant et après</span><span class="en">During and after</span></span><h3><span class="fr">Des photos et des vidéos</span><span class="en">Photos and video</span></h3><p><span class="fr">Des photos en haute résolution et des rushs vidéo de votre produit sur le terrain. Vous pouvez les utiliser librement sur vos réseaux, votre site et dans vos campagnes.</span><span class="en">High-resolution photos and raw footage of your product in the field. You're free to use them on your socials, your website and in your campaigns.</span></p></li>
+      <li><figure><img src="vallee-film.jpg" alt="Vallée gelée et sommets de granit du col Akshayuk, sur pellicule" data-en="Frozen valley and granite peaks of Akshayuk Pass, shot on film" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Au retour, à Montréal</span><span class="en">Back in Montréal</span></span><h3><span class="fr">Une soirée de projection</span><span class="en">A screening night</span></h3><p><span class="fr">On projette le film à Montréal devant la communauté plein air, avec une période de questions et quelques bières. Votre marque est à l'écran pendant le film, et au générique.</span><span class="en">We screen the film in Montréal for the local outdoor community, with a Q&amp;A and a few beers. Your brand is on screen during the film, and in the credits.</span></p></li>
+      <li><figure><img src="fjord-glace.jpg" alt="Glace de mer chaotique dans le fjord, entre deux falaises enneigées" data-en="Jumbled sea ice in the fjord, between two snow-covered cliffs" loading="lazy" decoding="async"></figure><span class="when"><span class="fr">Ensuite</span><span class="en">Then</span></span><h3><span class="fr">Les festivals</span><span class="en">Festivals</span></h3><p><span class="fr">On envoie le film aux festivals de films de montagne et d'aventure, au Québec, au Canada et à l'étranger.</span><span class="en">We submit the film to mountain and adventure film festivals in Québec, across Canada and abroad.</span></p></li>
       </ol>
-    <div class="ask"><h3><span class="fr">Ce qu'on vous demande</span><span class="en">What we're asking for</span></h3><p><span class="fr">Un prêt, un don ou un rabais sur un article de la liste. Un seul article, c'est déjà beaucoup.</span><span class="en">A loan, a donation or a discount on an item from the list. Even a single item goes a long way.</span></p><a class="btn" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a></div>
+    <div class="ask"><h3><span class="fr">Ce qu'on vous demande</span><span class="en">What we're asking for</span></h3><p><span class="fr">Un prêt, un don ou un rabais sur un article de la liste. Même un seul, ça nous avance beaucoup.</span><span class="en">A loan, a donation or a discount on one item from the list. Even a single one makes a real difference.</span></p><a class="btn" href="#contact"><span class="fr">Devenir partenaire</span><span class="en">Become a partner</span></a></div>
 
     <h2 style="margin-top:96px"><span class="fr">Selon votre contribution</span><span class="en">Depending on your contribution</span></h2>
     <ol class="tiers">
       <li><h3><span class="fr">Ami de l'expédition</span><span class="en">Friend of the expedition</span></h3><p class="give"><span class="fr">Un rabais ou du petit équipement</span><span class="en">A discount or small gear</span></p><p class="get"><span class="fr">Votre nom sur ce site et au générique du film, une publication de remerciement et une invitation à la soirée de projection.</span><span class="en">Your name on this site and in the film credits, a thank-you post and an invite to the screening night.</span></p></li>
-      <li><h3><span class="fr">Partenaire matériel</span><span class="en">Gear partner</span></h3><p class="give"><span class="fr">Le prêt ou le don d'un article clé</span><span class="en">The loan or gift of a key item</span></p><p class="get"><span class="fr">Un lot de photos et de vidéos de votre produit sur le terrain pour vos réseaux, votre logo ici et au générique, et votre logo à l'écran lors de la soirée de projection.</span><span class="en">A set of field photos and videos of your product for your socials, your logo here and in the credits, and your logo on screen at the screening night.</span></p></li>
+      <li><h3><span class="fr">Partenaire matériel</span><span class="en">Gear partner</span></h3><p class="give"><span class="fr">Le prêt ou le don d'un article clé</span><span class="en">The loan or gift of a key item</span></p><p class="get"><span class="fr">Des photos et des vidéos de votre produit sur le terrain, et votre logo sur ce site, au générique et à l'écran pendant la soirée de projection.</span><span class="en">Field photos and videos of your product, and your logo on this site, in the credits and on screen at the screening night.</span></p></li>
       <li><h3><span class="fr">Partenaire principal</span><span class="en">Lead partner</span></h3><p class="give"><span class="fr">L'équipement d'une partie de l'équipe</span><span class="en">Outfitting part of the team</span></p><p class="get"><span class="fr">Une courte vidéo montée pour vos réseaux, votre logo sur les pulkas et les tentes (donc dans le film), et la coprésentation de la soirée de projection à Montréal.</span><span class="en">A short video edited for your socials, your logo on the pulks and tents (so in the film), and co-hosting the screening night in Montréal.</span></p></li>
     </ol>
-    <p class="promise"><span class="fr">Pour tous nos partenaires&nbsp;: un compte rendu de l'utilisation du matériel à notre retour, et de la visibilité au Québec comme au Nunavut.</span><span class="en">For every partner: a report on how the gear was used once we're back, and visibility in both Québec and Nunavut.</span></p>
+    <p class="promise"><span class="fr">Dans tous les cas, vous recevez à notre retour un compte rendu sur l'utilisation de votre matériel, et on parle de vous au Québec comme au Nunavut.</span><span class="en">In every case, you get a report on how your gear was used once we're back, and we talk about you in both Québec and Nunavut.</span></p>
   </div>
 </section>
 
 <section class="biglist snowfield" id="embarquer">
   <canvas class="chladni" id="chladni" aria-hidden="true"></canvas>
   <div class="wrap">
-    <span class="dot"><span class="fr">Embarquer</span><span class="en">Get on board</span></span>
+    <span class="dot"><span class="fr">Ça vous tente&nbsp;?</span><span class="en">Interested?</span></span>
     <ul>
       <li><a href="mailto:dorianecara2@gmail.com?subject=Pr%C3%AAt%20de%20mat%C3%A9riel%20%E2%80%93%20Exp%C3%A9dition%20Auyuittuq%202027"><span class="fr">Prêter du matériel</span><span class="en">Lend gear</span></a></li>
       <li><a href="#contact"><span class="fr">Nous écrire</span><span class="en">Write to us</span></a></li>
@@ -866,8 +866,8 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
       <div class="col">
         <span class="label"><span class="fr">Expédition</span><span class="en">Expedition</span> <span class="syl" lang="iu">ᐊᐅᔪᐃᑦᑐᖅ</span></span>
         <p><span class="fr">Sept amis de Montréal et du Nunavut, une pulka chacun, et les 100&nbsp;km du col Akshayuk à traverser en avril 2027.</span><span class="en">Seven friends from Montréal and Nunavut, a pulk each, and the 100&nbsp;km of Akshayuk Pass to cross in April 2027.</span></p>
-        <span class="label" style="margin-top:14px"><span class="fr">Envie d'embarquer&nbsp;?</span><span class="en">Want to get on board?</span></span>
-        <p><span class="fr">Écrivez-nous pour recevoir notre dossier de commandite ou discuter d'un prêt de matériel.</span><span class="en">Write to us for our sponsorship package, or to talk about lending gear.</span></p>
+        <span class="label" style="margin-top:14px"><span class="fr">Nous écrire</span><span class="en">Write to us</span></span>
+        <p><span class="fr">Pour recevoir notre dossier de commandite ou parler d'un prêt de matériel, écrivez à Doriane.</span><span class="en">For our sponsorship package, or to talk about lending gear, write to Doriane.</span></p>
         <div class="mailrow">
           <a class="mailbox" id="email" href="mailto:dorianecara2@gmail.com?subject=Partenariat%20%E2%80%93%20Exp%C3%A9dition%20Auyuittuq%202027">dorianecara2@gmail.com</a>
           <button class="btn mint" id="copy" type="button"><span class="fr">Copier</span><span class="en">Copy</span></button>
@@ -876,7 +876,7 @@ window.__lang=l;if(l==='en'){document.body.classList.add('en');document.document
       </div>
       <nav class="links" aria-label="Pied de page" data-en="Footer">
         <a href="#projet"><span class="fr">Le projet</span><span class="en">The project</span></a>
-        <a href="#trace"><span class="fr">La trace</span><span class="en">The route</span></a>
+        <a href="#trace"><span class="fr">L'itinéraire</span><span class="en">The route</span></a>
         <a href="#equipe"><span class="fr">L'équipe</span><span class="en">Team</span></a>
         <a href="#materiel"><span class="fr">Matériel recherché</span><span class="en">Gear needed</span></a>
         <a class="ig" href="https://www.instagram.com/la_dodo_touch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>@la_<wbr>dodo_<wbr>touch</a>

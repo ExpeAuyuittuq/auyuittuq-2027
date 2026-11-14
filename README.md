@@ -4,7 +4,7 @@ Site de présentation de notre traversée à ski et pulka du col Akshayuk, dans 
 
 - **Site :** https://expe-auyuittuq.ca
 - **Équipe :** 7 amis, 4 de Montréal et 3 du Nunavut
-- **Itinéraire :** Qikiqtarjuaq → Pangnirtung, 100 km à ski en 8 jours, de −30 à −40 °C
+- **Itinéraire :** Qikiqtarjuaq → Pangnirtung, 100 km à ski, 8 jours de voyage dont 5 à ski, jusqu'à −40 °C
 - **Contact :** dorianecara2@gmail.com
 
 ## Contenu du dépôt

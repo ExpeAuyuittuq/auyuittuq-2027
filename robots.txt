@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://expe-auyuittuq.ca/sitemap.xml
